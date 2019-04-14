@@ -363,13 +363,9 @@ ul {
     padding: 70px 80px 0 40px;
 }
 
-.sociallinks ul li{
-    border: 1px solid;
-    border-radius:100%;
-}
+
 .sociallinks  li a i{
    line-height:1 rem;
-   font-size:30px !important;
 }
 /*
 Separator
