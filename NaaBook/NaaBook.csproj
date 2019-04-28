@@ -150,6 +150,7 @@
     <Content Include="Public\assets\css\style.css" />
     <Content Include="Public\assets\fonts\fontawesome-webfont.svg" />
     <Content Include="Public\assets\fonts\icofont.svg" />
+    <Content Include="Public\assets\images\background\ggg.jpg" />
     <Content Include="Public\assets\images\background\header.jpg" />
     <Content Include="Public\assets\images\logo %282%29.png" />
     <Content Include="Public\assets\images\logolay.png" />

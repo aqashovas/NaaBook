@@ -7,6 +7,7 @@ body {
     font-size: 14px;
     color: #797979;
     width: 100%;
+    
     padding: 0;
     margin-left: 0;
     margin-right: 0;
@@ -1076,20 +1077,6 @@ Footer Section style
 .specialfont {
     font-family: 'Gloria Hallelujah', cursive !important;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .socail_item {
     float: left;
     width: 30.5%;
@@ -1099,6 +1086,27 @@ Footer Section style
     .socail_item img {
         width: 100%;
     }
+.onesec i {
+    color: rgba(0, 0, 0, 0.53);
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.onesec h4 {
+    display: flex;
+    justify-content: center;
+}
+
+.homesec {
+    display: flex;
+    align-items: center;
+    height: 400px
+}
+.homebody {
+    height: 400px;
+    background-color: #ececec
+}
 
 /*.navbar-toggle button i {
     color: #ffb834ba;
@@ -1112,6 +1120,7 @@ nav.navbar.bootsnav {
     border-radius: 0px;
     background-color: #10101054;
     border: none;
-    /* border-bottom: #10101054; */
+     border-bottom: #10101054; 
     z-index: 9;
-}*/
+}
+*/
