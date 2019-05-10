@@ -172,3 +172,12 @@ Author URI: http://www.xpeedstudio.com
         padding: 2.01rem 1.5rem;
     }
 }
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+        .sidenav a {
+            font-size: 18px;
+        }
+}

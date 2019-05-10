@@ -1051,20 +1051,17 @@ Footer Section style
         width: 100%;
     }
 
-.homebody {
-   
-   
-}
+
 .homebody {
     padding-top: 4rem;
     padding-bottom: 5rem;
-    background-color: #ececec;
+    background-color: white;
    
 }
 
 .wrap {
     display: flex;
-    background: white;
+    background: #ffb834ba;
     padding: 1rem 1rem 1rem 1rem;
     border-radius: 0.5rem;
     box-shadow: 7px 7px 30px -5px rgba(0,0,0,0.1);
@@ -1117,9 +1114,46 @@ Footer Section style
 
 .display-6 {
     font-family: 'Source Sans Pro',sans-serif;
-    font-size: 1re
+    font-size: 1rem;
+    color:white;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
 }
 
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+#teacherlist {
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+}
 /*.navbar-toggle button i {
     color: #ffb834ba;
 }

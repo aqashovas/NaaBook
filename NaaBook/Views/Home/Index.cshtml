@@ -1,7 +1,13 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
-
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">İnsan-maşın interfeysi</a>
+    <a href="#">Şəbəkə texnologiyaları</a>
+    <a href="#">Hesablama təcrübələri</a>
+    <a href="#">Aerokosmik sistemlərin modelləşdirilməsi</a>
+</div>
 <section class="homebody">
     <div class="container">
 
@@ -21,7 +27,7 @@
                 </div>
             </div>
             <div class="col-lg-6 mbr-col-md-10">
-                <div class="wrap">
+                <div class="wrap" onclick="openNav()">
                     <div class="ico-wrap">
                         <i class="mbr-iconfont fas fa-book-reader"></i>
                     </div>
@@ -42,7 +48,7 @@
                     <div class="text-wrap vcenter">
                         <h2 class="mbr-fonts-style mbr-bold mbr-section-title3 display-5">
                             Semestr
-                            <span>Müəllimləri</span>
+                            <span><a href="@Url.Action("index","muellimler")">Müəllimləri</a></span>
                         </h2>
                         <p class="mbr-fonts-style text1 mbr-text display-6">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</p>
                     </div>
@@ -61,4 +67,13 @@
 
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
 }
