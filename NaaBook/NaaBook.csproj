@@ -140,12 +140,18 @@
     <Compile Include="Migrations\201905111135166_Studentinfo.Designer.cs">
       <DependentUpon>201905111135166_Studentinfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201905122018585_Timetable.cs" />
+    <Compile Include="Migrations\201905122018585_Timetable.Designer.cs">
+      <DependentUpon>201905122018585_Timetable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AcademyContext.cs" />
     <Compile Include="Models\Department.cs" />
     <Compile Include="Models\Faculty.cs" />
     <Compile Include="Models\Group.cs" />
     <Compile Include="Models\Student.cs" />
+    <Compile Include="Models\Teacher.cs" />
+    <Compile Include="Models\Timetable.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -393,6 +399,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201905111135166_Studentinfo.resx">
       <DependentUpon>201905111135166_Studentinfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905122018585_Timetable.resx">
+      <DependentUpon>201905122018585_Timetable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

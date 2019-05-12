@@ -16,5 +16,7 @@ namespace NaaBook.Models
         public List<Group> Groups { get; set; }
 
         public Faculty Faculty { get; set; }
+
+        public List<Teacher> Teachers { get; set; }
     }
 }
