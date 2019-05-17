@@ -126,6 +126,8 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Auth.cs" />
+    <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\MuellimlerController.cs" />
@@ -152,6 +154,14 @@
     <Compile Include="Migrations\201905171213051_dbsetandexams.Designer.cs">
       <DependentUpon>201905171213051_dbsetandexams.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201905171601149_Setting.cs" />
+    <Compile Include="Migrations\201905171601149_Setting.Designer.cs">
+      <DependentUpon>201905171601149_Setting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905171603427_Dbsetsetting.cs" />
+    <Compile Include="Migrations\201905171603427_Dbsetsetting.Designer.cs">
+      <DependentUpon>201905171603427_Dbsetsetting.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AcademyContext.cs" />
     <Compile Include="Models\Colloquium.cs" />
@@ -161,6 +171,7 @@
     <Compile Include="Models\Faculty.cs" />
     <Compile Include="Models\Group.cs" />
     <Compile Include="Models\Lessonmaterial.cs" />
+    <Compile Include="Models\Setting.cs" />
     <Compile Include="Models\Student.cs" />
     <Compile Include="Models\Subject.cs" />
     <Compile Include="Models\Teacher.cs" />
@@ -394,6 +405,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Base\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -421,6 +433,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201905171213051_dbsetandexams.resx">
       <DependentUpon>201905171213051_dbsetandexams.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905171601149_Setting.resx">
+      <DependentUpon>201905171601149_Setting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905171603427_Dbsetsetting.resx">
+      <DependentUpon>201905171603427_Dbsetsetting.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

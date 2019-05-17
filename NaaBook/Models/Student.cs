@@ -31,7 +31,7 @@ namespace NaaBook.Models
 
         public List<Evaluationtable> Evaluationtables { get; set; }
 
-        public List<Colloquium> Colloquims { get; set; }
+        public List<Colloquium> Colloquiums { get; set; }
 
         public List<Exam> Exams { get; set; }
 

@@ -34,6 +34,8 @@ namespace NaaBook.Models
 
         public DbSet<Timetable> Timetables { get; set; }
 
+        public DbSet<Setting> Settings { get; set; }
+
 
 
 

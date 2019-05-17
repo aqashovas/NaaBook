@@ -6,13 +6,12 @@ using System.Web.Mvc;
 
 namespace NaaBook.Controllers
 {
-    [Auth]
-    public class HomeController : Controller
+    public class BaseController : Controller
     {
+        // GET: Base
         public ActionResult Index()
         {
             return View();
         }
-
     }
 }
