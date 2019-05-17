@@ -144,12 +144,25 @@
     <Compile Include="Migrations\201905122018585_Timetable.Designer.cs">
       <DependentUpon>201905122018585_Timetable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201905171107293_Lessonroutine.cs" />
+    <Compile Include="Migrations\201905171107293_Lessonroutine.Designer.cs">
+      <DependentUpon>201905171107293_Lessonroutine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905171213051_dbsetandexams.cs" />
+    <Compile Include="Migrations\201905171213051_dbsetandexams.Designer.cs">
+      <DependentUpon>201905171213051_dbsetandexams.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AcademyContext.cs" />
+    <Compile Include="Models\Colloquium.cs" />
     <Compile Include="Models\Department.cs" />
+    <Compile Include="Models\Evaluationtable.cs" />
+    <Compile Include="Models\Exam.cs" />
     <Compile Include="Models\Faculty.cs" />
     <Compile Include="Models\Group.cs" />
+    <Compile Include="Models\Lessonmaterial.cs" />
     <Compile Include="Models\Student.cs" />
+    <Compile Include="Models\Subject.cs" />
     <Compile Include="Models\Teacher.cs" />
     <Compile Include="Models\Timetable.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -402,6 +415,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201905122018585_Timetable.resx">
       <DependentUpon>201905122018585_Timetable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905171107293_Lessonroutine.resx">
+      <DependentUpon>201905171107293_Lessonroutine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905171213051_dbsetandexams.resx">
+      <DependentUpon>201905171213051_dbsetandexams.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

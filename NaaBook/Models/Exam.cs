@@ -1,29 +1,30 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
 namespace NaaBook.Models
 {
-    //Dərs cədvəli
-    public class Timetable
+    public class Exam
     {
         public int Id { get; set; }
 
-        public string Day { get; set; }
+        public int StudentId { get; set; }
 
-        public string Time { get; set; }
+        [Range(1, 50)]
+        public int Examresult { get; set; }
 
         public int TeacherId { get; set; }
 
-        public int GroupId { get; set; }
-
         public int SubjectId { get; set; }
 
-        public Group Group { get; set; }
+        public Subject Subject { get; set; }
+
+        public Student Student { get; set; }
 
         public Teacher Teacher { get; set; }
 
-        public Subject Subject { get; set; }
+
     }
 }

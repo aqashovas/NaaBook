@@ -21,5 +21,9 @@ namespace NaaBook.Models
 
         public List<Timetable> Timetables { get; set; }
 
+        public List<Lessonmaterial> Lessonmaterials { get; set; }
+
+
+
     }
 }

@@ -29,6 +29,14 @@ namespace NaaBook.Models
 
         public Group Group { get; set; }
 
+        public List<Evaluationtable> Evaluationtables { get; set; }
+
+        public List<Colloquium> Colloquims { get; set; }
+
+        public List<Exam> Exams { get; set; }
+
+
+
 
     }
 }

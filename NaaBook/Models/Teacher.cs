@@ -21,5 +21,15 @@ namespace NaaBook.Models
         public Department Department { get; set; }
 
         public List<Timetable> Timetables { get; set; }
+
+        public List<Lessonmaterial> Lessonmaterials { get; set; }
+
+        public List<Evaluationtable> Evaluationtables { get; set; }
+
+        public List<Colloquium> Colloquims { get; set; }
+
+      
+
+
     }
 }

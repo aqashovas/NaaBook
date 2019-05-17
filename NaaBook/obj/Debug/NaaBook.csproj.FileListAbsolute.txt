@@ -174,3 +174,5 @@ C:\Users\Sabina123\Source\Repos\aqashovas\NaaBook\NaaBook\obj\Debug\NaaBook.Migr
 C:\Users\Sabina123\Source\Repos\aqashovas\NaaBook\NaaBook\obj\Debug\NaaBook.csproj.GenerateResource.cache
 C:\Users\Sabina123\Source\Repos\aqashovas\NaaBook\NaaBook\obj\Debug\NaaBook.Migrations.Studentinfo.resources
 C:\Users\Sabina123\Source\Repos\aqashovas\NaaBook\NaaBook\obj\Debug\NaaBook.Migrations.Timetable.resources
+C:\Users\Sabina123\Source\Repos\aqashovas\NaaBook\NaaBook\obj\Debug\NaaBook.Migrations.Lessonroutine.resources
+C:\Users\Sabina123\Source\Repos\aqashovas\NaaBook\NaaBook\obj\Debug\NaaBook.Migrations.dbsetandexams.resources

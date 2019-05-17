@@ -16,8 +16,32 @@ namespace NaaBook.Models
 
         public DbSet<Group> Groups { get; set; }
 
+        public DbSet<Teacher> Teachers { get; set; }
+
         public DbSet<Department> Departments { get; set; }
 
         public DbSet<Faculty> Faculties { get; set; }
+
+        public DbSet<Exam> Exams { get; set; }
+
+        public DbSet<Evaluationtable> Evaluationtables { get; set; }
+
+        public DbSet<Colloquium> Colloquiums { get; set; }
+
+        public DbSet<Lessonmaterial> Lessonmaterials { get; set; }
+
+        public DbSet<Subject> Subjects { get; set; }
+
+        public DbSet<Timetable> Timetables { get; set; }
+
+
+
+
+
+
+
+
+
+
     }
 }
