@@ -178,3 +178,4 @@ C:\Users\Sabina123\Source\Repos\aqashovas\NaaBook\NaaBook\obj\Debug\NaaBook.Migr
 C:\Users\Sabina123\Source\Repos\aqashovas\NaaBook\NaaBook\obj\Debug\NaaBook.Migrations.dbsetandexams.resources
 C:\Users\Sabina123\Source\Repos\aqashovas\NaaBook\NaaBook\obj\Debug\NaaBook.Migrations.Setting.resources
 C:\Users\Sabina123\Source\Repos\aqashovas\NaaBook\NaaBook\obj\Debug\NaaBook.Migrations.Dbsetsetting.resources
+C:\Users\Sabina123\Source\Repos\aqashovas\NaaBook\NaaBook\obj\Debug\NaaBook.Migrations.Teachercontact.resources

@@ -16,6 +16,10 @@ namespace NaaBook.Models
         //soyadı
         public string Surname { get; set; }
 
+        public string Mail { get; set; }
+
+        public string Phone { get; set; }
+
         public int DepartmentId { get; set; }
 
         public Department Department { get; set; }

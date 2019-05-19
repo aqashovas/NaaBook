@@ -1,4 +1,5 @@
-﻿
+﻿@model List<Teacher> 
+
 @{
     ViewBag.Title = "Index";
 }
@@ -14,30 +15,19 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
+                
+                @foreach (var item in Model)
+                {
+                    <tr>
 
-                    <td>Əhmədov Əbilhəsən</td>
-                    <td>0504213665</td>
-                    <td><a href="#">xahmedov</a></td>
-                </tr>
-                <tr>
+                        <td>@item.Name+" " +@item.Surname</td>
+                        <td>@item.Phone</td>
+                        <td><a href="#">@item.Mail</a></td>
+                    </tr>
+                }
 
-                    <td>Əhmədov Əbilhəsən</td>
-                    <td>0504213665</td>
-                    <td><a href="#">xahmedov</a></td>
-                </tr>
-                <tr>
 
-                    <td>Əhmədov Əbilhəsən</td>
-                    <td>0504213665</td>
-                    <td><a href="#">xahmedov</a></td>
-                </tr>
-                <tr>
 
-                    <td>Əhmədov Əbilhəsən</td>
-                    <td>0504213665</td>
-                    <td><a href="#">xahmedov</a></td>
-                </tr>
 
             </tbody>
         </table>

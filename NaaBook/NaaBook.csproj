@@ -162,6 +162,10 @@
     <Compile Include="Migrations\201905171603427_Dbsetsetting.Designer.cs">
       <DependentUpon>201905171603427_Dbsetsetting.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201905191115019_Teachercontact.cs" />
+    <Compile Include="Migrations\201905191115019_Teachercontact.Designer.cs">
+      <DependentUpon>201905191115019_Teachercontact.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AcademyContext.cs" />
     <Compile Include="Models\Colloquium.cs" />
@@ -439,6 +443,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201905171603427_Dbsetsetting.resx">
       <DependentUpon>201905171603427_Dbsetsetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905191115019_Teachercontact.resx">
+      <DependentUpon>201905191115019_Teachercontact.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
