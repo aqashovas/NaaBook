@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NaaBook.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -9,9 +10,21 @@ namespace NaaBook.Controllers
     [Auth]
     public class HomeController : Controller
     {
+        private readonly AcademyContext db = new AcademyContext();
         public ActionResult Index()
         {
-            return View();
+            int id = Convert.ToInt32(Session["UserId"]);
+            int groupId = db.Students.FirstOrDefault(g => g.Id == id).GroupId;
+            List<int> subjectid = new List<int>();
+            List<Timetable> timetable = db.Timetables.Where(s => s.GroupId == groupId).ToList();
+
+            foreach (var item in timetable)
+            {
+                subjectid.Add(item.SubjectId);
+            }
+            var subjectlist = db.Subjects.Where(t => subjectid.Contains(t.Id)).ToList();
+
+            return View(subjectlist);
         }
 
     }

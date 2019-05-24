@@ -90,8 +90,7 @@ body {
 }
 
 .text-orange {
-    color: #ffb834ba !important;
-    
+    color: #9152f8 !important;
 }
 
 .text-black {
@@ -1061,7 +1060,7 @@ Footer Section style
 
 .wrap {
     display: flex;
-    background: #ffb834ba;
+    background: #9152f8;
     padding: 1rem 1rem 1rem 1rem;
     border-radius: 0.5rem;
     box-shadow: 7px 7px 30px -5px rgba(0,0,0,0.1);
@@ -1069,7 +1068,7 @@ Footer Section style
 }
 
     .wrap:hover {
-        background: linear-gradient(135deg,#ffb834ba 0%,#221702 100%);
+        background: -webkit-linear-gradient(bottom, #7579ff, #b224ef);
         color: white;
     }
 
@@ -1158,6 +1157,14 @@ color:black;
     padding-top: 4rem;
     padding-bottom: 5rem;
 }
+#timetableup {
+    padding-top: 4rem;
+}
+#timetabledown {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
 /*.navbar-toggle button i {
     color: #ffb834ba;
 }

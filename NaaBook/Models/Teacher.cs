@@ -16,6 +16,8 @@ namespace NaaBook.Models
         //soyadı
         public string Surname { get; set; }
 
+        public string Fathername { get; set; }
+
         public string Mail { get; set; }
 
         public string Phone { get; set; }

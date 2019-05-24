@@ -1,12 +1,15 @@
-﻿@{
+﻿@model List<Subject>
+@{
     ViewBag.Title = "Home Page";
 }
 <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="#">İnsan-maşın interfeysi</a>
-    <a href="#">Şəbəkə texnologiyaları</a>
-    <a href="#">Hesablama təcrübələri</a>
-    <a href="#">Aerokosmik sistemlərin modelləşdirilməsi</a>
+    @foreach (var item in Model)
+    {
+        <a href="@Url.Action("index","jurnal",new {id=item.Id})">@item.Name</a>
+    }
+
+    
 </div>
 <section class="homebody">
     <div class="container">

@@ -36,6 +36,14 @@ namespace NaaBook.Models
 
         public DbSet<Setting> Settings { get; set; }
 
+        public DbSet<Laboratory> Laboratories { get; set; }
+
+        public DbSet<Freework> Freeworks { get; set; }
+
+        public DbSet<Lessonsection> Lessonsections { get; set; }
+
+
+
 
 
 

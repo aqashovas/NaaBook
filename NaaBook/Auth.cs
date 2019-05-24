@@ -13,7 +13,7 @@ namespace NaaBook
 
             if (HttpContext.Current.Session["login"] == null)
             {
-                filterContext.Result = new RedirectResult("~/home");
+                filterContext.Result = new RedirectResult("~/login");
                 return;
             }
 

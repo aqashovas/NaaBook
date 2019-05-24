@@ -13,6 +13,13 @@ namespace NaaBook.Models
 
         public List<Timetable> Timetables { get; set; }
 
+        public List<Lessonsection> Lessonsections { get; set; }
+
+        public List<Laboratory> Laboratories { get; set; }
+
+        public List<Freework> Freeworks { get; set; }
+
+
 
 
     }

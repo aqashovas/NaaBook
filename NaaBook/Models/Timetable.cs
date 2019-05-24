@@ -14,6 +14,14 @@ namespace NaaBook.Models
 
         public string Time { get; set; }
 
+        public string Classroom { get; set; }
+
+        public bool Status { get; set; }
+
+        public int SemesterNo { get; set; }
+
+        public string Weeklysection { get; set; }
+
         public int TeacherId { get; set; }
 
         public int GroupId { get; set; }

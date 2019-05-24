@@ -10,7 +10,7 @@ namespace NaaBook.Controllers
     [Auth]
     public class MuellimlerController : Controller
     {
-        private AcademyContext db = new AcademyContext();
+        private readonly AcademyContext db = new AcademyContext();
         // GET: Muellimler
         public ActionResult Index()
         {
