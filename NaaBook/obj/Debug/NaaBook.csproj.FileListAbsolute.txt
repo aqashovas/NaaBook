@@ -182,3 +182,5 @@ C:\Users\Sabina123\Source\Repos\aqashovas\NaaBook\NaaBook\obj\Debug\NaaBook.Migr
 C:\Users\Sabina123\Source\Repos\aqashovas\NaaBook\NaaBook\obj\Debug\NaaBook.Migrations.Classroom.resources
 C:\Users\Sabina123\Source\Repos\aqashovas\NaaBook\NaaBook\obj\Debug\NaaBook.Migrations.TimetablevsTeacher.resources
 C:\Users\Sabina123\Source\Repos\aqashovas\NaaBook\NaaBook\obj\Debug\NaaBook.Migrations.newtables.resources
+C:\Users\Sabina123\Source\Repos\aqashovas\NaaBook\NaaBook\obj\Debug\NaaBook.Migrations.lab.resources
+C:\Users\Sabina123\Source\Repos\aqashovas\NaaBook\NaaBook\obj\Debug\NaaBook.Migrations.freework.resources

@@ -180,6 +180,14 @@
     <Compile Include="Migrations\201905241008449_newtables.Designer.cs">
       <DependentUpon>201905241008449_newtables.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201905261201385_lab.cs" />
+    <Compile Include="Migrations\201905261201385_lab.Designer.cs">
+      <DependentUpon>201905261201385_lab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905261223492_freework.cs" />
+    <Compile Include="Migrations\201905261223492_freework.Designer.cs">
+      <DependentUpon>201905261223492_freework.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AcademyContext.cs" />
     <Compile Include="Models\Colloquium.cs" />
@@ -198,6 +206,7 @@
     <Compile Include="Models\Teacher.cs" />
     <Compile Include="Models\Timetable.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Viewmodels\VwJournal.cs" />
     <Compile Include="Viewmodels\VwTimetable.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -425,11 +434,11 @@
     <Content Include="Views\Muellimler\Index.cshtml" />
     <Content Include="Views\Login\Index.cshtml" />
     <Content Include="Views\Cedvel\Index.cshtml" />
+    <Content Include="Views\Jurnal\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Views\Base\" />
-    <Folder Include="Views\Jurnal\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -475,6 +484,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201905241008449_newtables.resx">
       <DependentUpon>201905241008449_newtables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905261201385_lab.resx">
+      <DependentUpon>201905261201385_lab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905261223492_freework.resx">
+      <DependentUpon>201905261223492_freework.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

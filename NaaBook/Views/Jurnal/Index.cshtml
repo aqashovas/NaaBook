@@ -1,0 +1,32 @@
+﻿@model VwJournal 
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html lang="az">
+<head>
+    <meta name="viewport" content="width=device-width" />
+
+    <title>Index</title>
+    <!--Theme custom css -->
+    <link rel="stylesheet" href="~/Public/assets/css/style.css">
+    <!--<link rel="stylesheet" href="~/Public/assets/css/colors/maron.css">-->
+    <!--Theme Responsive css-->
+    <link rel="stylesheet" href="~/Public/assets/css/responsive.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="sidebar2">
+
+        <a href="@Url.Action("index","cedvel")"> <i class="far fa-newspaper"></i> </a>
+        <a href="@Url.Action("index","muellimler")"><i class="fas fa-chalkboard-teacher"></i> </a>
+        <a href="@Url.Action("index","home")"> <i class="fas fa-home"></i></a>
+    </div>
+    <section id="mainsecev">
+    </section>
+
+</body>
+</html>

@@ -33,7 +33,12 @@ namespace NaaBook.Models
 
         public List<Colloquium> Colloquiums { get; set; }
 
+        public List<Laboratory> Laboratories { get; set; }
+
         public List<Exam> Exams { get; set; }
+
+        public List<Freework> Freeworks { get; set; }
+
 
 
 
