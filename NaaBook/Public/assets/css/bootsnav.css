@@ -72,9 +72,7 @@ nav.navbar.bootsnav {
         top: 5px;
     }
 
-        nav.navbar.bootsnav .navbar-toggle i {
-            color: #9152f8;
-        }
+       
 
     nav.navbar.bootsnav ul.nav .dropdown-menu .dropdown-menu {
         top: 0;
@@ -84,7 +82,9 @@ nav.navbar.bootsnav {
     nav.navbar.bootsnav ul.nav ul.dropdown-menu > li > a {
         white-space: normal;
     }
-
+    nav.navbar.bootsnav .navbar-toggle i {
+        color: #9152f8;
+    }
 
 ul.menu-col {
     padding: 0;
