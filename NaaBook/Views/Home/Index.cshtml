@@ -6,7 +6,7 @@
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     @foreach (var item in Model)
     {
-        <a href="@Url.Action("index","jurnal",new {id=item.Id})">@item.Name</a>
+        <a href="@Url.Action("index","jurnal",new {id=item.Id})" class="display-5 text-orange">@item.Name</a>
     }
 
     
@@ -24,7 +24,7 @@
                         <!-- <span class="mbr-iconfont fa-volume-up fa"></span> -->
                     </div>
                     <div class="text-wrap vcenter">
-                        <h2 class="mbr-fonts-style mbr-bold mbr-section-title3 display-5">Dərs <span>Cədvəli</span></h2>
+                        <h2 class="mbr-fonts-style mbr-bold mbr-section-title3 display-5">Dərs <span class="display-5">Cədvəli</span></h2>
                         <p class="mbr-fonts-style text1 mbr-text display-6">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</p>
                     </div>
                 </div>
@@ -37,7 +37,7 @@
                     <div class="text-wrap vcenter">
                         <h2 class="mbr-fonts-style mbr-bold mbr-section-title3 display-5">
                             Tədris olunan
-                            <span>Fənlər</span>
+                            <span class="display-5">Fənlər</span>
                         </h2>
                         <p class="mbr-fonts-style text1 mbr-text display-6">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</p>
                     </div>
@@ -51,7 +51,7 @@
                     <div class="text-wrap vcenter">
                         <h2 class="mbr-fonts-style mbr-bold mbr-section-title3 display-5">
                             Semestr
-                            <span><a href="@Url.Action("index","muellimler")">Müəllimləri</a></span>
+                            <span class="display-5"><a href="@Url.Action("index","muellimler")">Müəllimləri</a></span>
                         </h2>
                         <p class="mbr-fonts-style text1 mbr-text display-6">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</p>
                     </div>

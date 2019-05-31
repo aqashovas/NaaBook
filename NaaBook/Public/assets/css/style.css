@@ -1099,6 +1099,7 @@ Footer Section style
 .display-5 {
     font-family: 'Source Sans Pro',sans-serif;
     font-size: 1.4rem;
+    color:white;
 }
 
 .mbr-bold {
@@ -1143,7 +1144,8 @@ color:white;
     }
 
         .sidenav a:hover {
-            color: #f1f1f1;
+            color: -webkit-linear-gradient(bottom, #7579ff, #b224ef);
+           
         }
 
     .sidenav .closebtn {
