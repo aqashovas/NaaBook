@@ -9,7 +9,7 @@ namespace NaaBook.Viewmodels
     public class VwJournal
     {
 
-        public int Laboratory { get; set; }
+        public int ? Laboratory { get; set; }
 
         public List<Evaluationtable> Evaluationtables { get; set; }
 

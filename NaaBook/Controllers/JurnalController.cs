@@ -8,6 +8,7 @@ using System.Web.Mvc;
 
 namespace NaaBook.Controllers
 {
+    [Auth]
     public class JurnalController : Controller
     {
         private readonly AcademyContext db = new AcademyContext();
@@ -24,7 +25,7 @@ namespace NaaBook.Controllers
                 teacherid.Add(item.TeacherId);
             }
             var teacherslist = db.Teachers.Where(t => teacherid.Contains(t.Id)).ToList();
-            int labcount = db.Laboratories.FirstOrDefault(l => l.SubjectId == id && l.StudentId==idst).Count;
+            int ? labcount = db.Laboratories.Where(l => l.SubjectId == id && l.StudentId==idst).Count();
             int lestime = db.Lessonsections.FirstOrDefault(l => l.SubjectId == id && l.GroupId == groupId).LessonTime;
             List<Lessonmaterial> lessonmaterials = db.Lessonmaterials.Where(l => l.GroupId == groupId && l.SubjectId == id).ToList();
             Colloquium colloquium = db.Colloquiums.FirstOrDefault(c => c.SubjectId == id && c.StudentId == idst);
