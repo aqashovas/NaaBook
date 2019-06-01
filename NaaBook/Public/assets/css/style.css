@@ -1166,11 +1166,11 @@ color:white;
     padding-top: 4rem;
     padding-bottom: 4rem;
 }
-.sidebar {
+.sidebar2 {
     height: 100%;
     width: 160px;
     position: fixed;
-    z-index: 1;
+    z-index: 99999;
     top: 0;
     left: 0;
     background-color: #262626;
@@ -1189,7 +1189,9 @@ color:white;
     .sidebar2 a:hover {
         color:  #b224ef;
     }
-
+    .wr2{
+        width:350px;
+    }
 /*.navbar-toggle button i {
     color: #ffb834ba;
 }

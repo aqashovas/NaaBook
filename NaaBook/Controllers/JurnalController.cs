@@ -31,7 +31,7 @@ namespace NaaBook.Controllers
             Colloquium colloquium = db.Colloquiums.FirstOrDefault(c => c.SubjectId == id && c.StudentId == idst);
             List<Evaluationtable> evaluationtables = db.Evaluationtables.Where(e => e.StudentId == idst && e.SubjectId == id).ToList();
             Exam exam = db.Exams.FirstOrDefault(e => e.StudentId == idst && e.SubjectId == id);
-            int freeworkcount = db.Freeworks.FirstOrDefault(f => f.SubjectId == id && f.StudentId == idst).Count;
+            int ? freeworkcount = db.Freeworks.Where(f => f.SubjectId == id && f.StudentId == idst).Count();
             VwJournal model = new VwJournal();
             model.Teachers = teacherslist;
             model.Laboratory = labcount;

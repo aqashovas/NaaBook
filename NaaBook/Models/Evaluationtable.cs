@@ -19,6 +19,8 @@ namespace NaaBook.Models
 
         public int SubjectId { get; set; }
 
+        public string Time { get; set; }
+
         public Subject Subject { get; set; }
 
         public Student Student { get; set; }

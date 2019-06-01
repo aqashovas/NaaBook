@@ -126,6 +126,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Areas\Evaluation\EvaluationAreaRegistration.cs" />
     <Compile Include="Auth.cs" />
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\CedvelController.cs" />
@@ -187,6 +188,10 @@
     <Compile Include="Migrations\201905261223492_freework.cs" />
     <Compile Include="Migrations\201905261223492_freework.Designer.cs">
       <DependentUpon>201905261223492_freework.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906011253077_TimeEvt.cs" />
+    <Compile Include="Migrations\201906011253077_TimeEvt.Designer.cs">
+      <DependentUpon>201906011253077_TimeEvt.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AcademyContext.cs" />
@@ -391,6 +396,7 @@
     <Content Include="Public\loginstyle\vendor\bootstrap\css\bootstrap-reboot.min.css.map" />
     <Content Include="Public\loginstyle\vendor\bootstrap\css\bootstrap.css.map" />
     <Content Include="Public\loginstyle\vendor\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="Areas\Evaluation\Views\web.config" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -438,6 +444,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\Evaluation\Controllers\" />
+    <Folder Include="Areas\Evaluation\Models\" />
+    <Folder Include="Areas\Evaluation\Views\Shared\" />
     <Folder Include="Views\Base\" />
   </ItemGroup>
   <ItemGroup>
@@ -490,6 +499,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201905261223492_freework.resx">
       <DependentUpon>201905261223492_freework.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906011253077_TimeEvt.resx">
+      <DependentUpon>201906011253077_TimeEvt.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

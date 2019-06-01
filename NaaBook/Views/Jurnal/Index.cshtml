@@ -25,7 +25,82 @@
         <a href="@Url.Action("index","muellimler")"><i class="fas fa-chalkboard-teacher"></i> </a>
         <a href="@Url.Action("index","home")"> <i class="fas fa-home"></i></a>
     </div>
-    <section id="mainsecev">
+    <section id="labvsfreework">
+        <div class="container">
+
+
+            <div class="row mbr-justify-content-center">
+
+                <div class="col-lg-6 mbr-col-md-10">
+                    <div class="wrap wr2">
+                        <div class="ico-wrap">
+                           @Model.Freework
+                        </div>
+                        <div class="text-wrap vcenter">
+                            <h2 class="mbr-fonts-style mbr-bold mbr-section-title3 display-5">
+                                Sərbəst işlər
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 mbr-col-md-10">
+                    <div class="wrap wr2">
+                        <div class="ico-wrap">
+                           @Model.Laboratory
+                        </div>
+                        <div class="text-wrap vcenter">
+                            <h2 class="mbr-fonts-style mbr-bold mbr-section-title3 display-5">
+                                Laboratoriya işləri                               
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+
+        </div>
+
+    </section>
+    <section id="evsec">
+        <div class="container">
+            <div class="row">
+                <div class="table-responsive">
+                    <h2 class="text-orange">Qiymətləndirmə və davamiyyət</h2>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Günlər</th>
+                                <th scope="col">1-ci hissə</th>
+                                <th scope="col">2-ci hissə</th>
+
+
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model.Evaluationtables)
+                            {
+                                <tr>
+                                    <th scope="row">@item.Time</th>
+                                    <td>@item.MarkOrAttendanceFirst</td>
+                                    <td>@item.MarkOrAttendanceSecond</td>
+                                </tr>
+                            }
+
+
+
+
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
     </section>
 
 </body>

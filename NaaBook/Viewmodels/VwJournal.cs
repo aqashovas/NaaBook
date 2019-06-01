@@ -17,7 +17,7 @@ namespace NaaBook.Viewmodels
 
         public int Lessonsection { get; set; }
 
-        public int Freework { get; set; }
+        public int ? Freework { get; set; }
 
         public List<Teacher> Teachers { get; set; }
 
