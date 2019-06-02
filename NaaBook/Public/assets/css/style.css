@@ -1168,7 +1168,7 @@ color:white;
 }
 .sidebar2 {
     height: 100%;
-    width: 160px;
+    width: 103px;
     position: fixed;
     z-index: 99999;
     top: 0;
@@ -1178,20 +1178,35 @@ color:white;
     padding-top: 16px;
 }
 
-.sidebar2 a {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 20px;
-    color: #9152f8;
-    display: block;
-}
+    .sidebar2 a {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 20px;
+        color: #9152f8;
+        display: block;
+        margin-top: 50px;
+    }
 
     .sidebar2 a:hover {
         color:  #b224ef;
     }
-    .wr2{
-        width:350px;
+    .sidebar2 a i {
+        font-size:43px;
     }
+    .wr2{
+        width:230px;
+    }
+#labvsfreework {
+    margin-left: 110px;
+}
+#evsec {
+    margin-left: 110px;
+}
+#evsec table {
+font-size:20px;
+
+}
+
 /*.navbar-toggle button i {
     color: #ffb834ba;
 }

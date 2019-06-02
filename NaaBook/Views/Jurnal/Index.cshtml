@@ -71,12 +71,12 @@
             <div class="row">
                 <div class="table-responsive">
                     <h2 class="text-orange">Qiymətləndirmə və davamiyyət</h2>
-                    <table class="table">
+                    <table class="table" border="1" bordercolor="#9152f8">
                         <thead>
                             <tr>
-                                <th scope="col">Günlər</th>
-                                <th scope="col">1-ci hissə</th>
-                                <th scope="col">2-ci hissə</th>
+                                <th scope="col" class="text-orange">Günlər</th>
+                                <th scope="col"  class="text-orange">1-ci hissə</th>
+                                <th scope="col"  class="text-orange">2-ci hissə</th>
 
 
 
@@ -86,7 +86,7 @@
                             @foreach (var item in Model.Evaluationtables)
                             {
                                 <tr>
-                                    <th scope="row">@item.Time</th>
+                                    <th scope="row"  class="text-orange">@item.Time</th>
                                     <td>@item.MarkOrAttendanceFirst</td>
                                     <td>@item.MarkOrAttendanceSecond</td>
                                 </tr>
