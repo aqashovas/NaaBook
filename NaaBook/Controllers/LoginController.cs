@@ -21,6 +21,7 @@ namespace NaaBook.Controllers
             if (ModelState.IsValid)
             {
                 Student lgn = db.Students.FirstOrDefault(u => u.Username == student.Username);
+                
 
                 if (lgn != null)
                 {
@@ -40,7 +41,7 @@ namespace NaaBook.Controllers
 
        public ActionResult Createpass()
         {
-            string a = Crypto.HashPassword("123");
+            string a = Crypto.HashPassword("000");
             return Content(a);
         }
     }

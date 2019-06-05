@@ -34,7 +34,7 @@
                 <div class="col-lg-6 mbr-col-md-10">
                     <div class="wrap wr2">
                         <div class="ico-wrap">
-                           @Model.Freework
+                            @Model.Freework
                         </div>
                         <div class="text-wrap vcenter">
                             <h2 class="mbr-fonts-style mbr-bold mbr-section-title3 display-5">
@@ -43,15 +43,15 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="col-lg-6 mbr-col-md-10">
                     <div class="wrap wr2">
                         <div class="ico-wrap">
-                           @Model.Laboratory
+                            @Model.Laboratory
                         </div>
                         <div class="text-wrap vcenter">
                             <h2 class="mbr-fonts-style mbr-bold mbr-section-title3 display-5">
-                                Laboratoriya işləri                               
+                                Laboratoriya işləri
                             </h2>
                         </div>
                     </div>
@@ -75,8 +75,8 @@
                         <thead>
                             <tr>
                                 <th scope="col" class="text-orange">Günlər</th>
-                                <th scope="col"  class="text-orange">1-ci hissə</th>
-                                <th scope="col"  class="text-orange">2-ci hissə</th>
+                                <th scope="col" class="text-orange">1-ci hissə</th>
+                                <th scope="col" class="text-orange">2-ci hissə</th>
 
 
 
@@ -86,7 +86,7 @@
                             @foreach (var item in Model.Evaluationtables)
                             {
                                 <tr>
-                                    <th scope="row"  class="text-orange">@item.Time</th>
+                                    <th scope="row" class="text-orange">@item.Time</th>
                                     <td>@item.MarkOrAttendanceFirst</td>
                                     <td>@item.MarkOrAttendanceSecond</td>
                                 </tr>
@@ -102,6 +102,39 @@
             </div>
         </div>
     </section>
+    <section id="themessec">
+        <div class="container">
+            <div class="row">
+                <div class="table-responsive">
+                    <h2 class="text-orange">DƏrs mövzular</h2>
+                    <table class="table" border="1" bordercolor="#9152f8">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="text-orange">Günlər</th>
+                                <th scope="col" class="text-orange">Mövzular</th>
 
+
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model.Lessonmaterials)
+                            {
+                                <tr>
+                                    <th scope="row" class="text-orange">@item.Day</th>
+                                    <td>@item.Theme</td>
+                                </tr>
+                            }
+
+
+
+
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
