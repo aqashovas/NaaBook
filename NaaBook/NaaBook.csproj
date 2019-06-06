@@ -127,6 +127,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Evaluation\Controllers\AnasehifeController.cs" />
+    <Compile Include="Areas\Evaluation\Controllers\EvaluationtablesController.cs" />
     <Compile Include="Areas\Evaluation\Controllers\LoginEvController.cs" />
     <Compile Include="Areas\Evaluation\Controllers\CedvelimController.cs" />
     <Compile Include="Areas\Evaluation\Controllers\QiymetlendirmeController.cs" />
@@ -220,6 +221,7 @@
     <Compile Include="Models\Teacher.cs" />
     <Compile Include="Models\Timetable.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Viewmodels\VwEvaluation.cs" />
     <Compile Include="Viewmodels\VwJournal.cs" />
     <Compile Include="Viewmodels\VwTimetable.cs" />
   </ItemGroup>
@@ -563,6 +565,12 @@
     <Content Include="Areas\Evaluation\Public\loginstyle\vendor\bootstrap\css\bootstrap-reboot.min.css.map" />
     <Content Include="Areas\Evaluation\Public\loginstyle\vendor\bootstrap\css\bootstrap.css.map" />
     <Content Include="Areas\Evaluation\Public\loginstyle\vendor\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="Areas\Evaluation\Views\Evaluationtables\Create.cshtml" />
+    <Content Include="Areas\Evaluation\Views\Evaluationtables\Delete.cshtml" />
+    <Content Include="Areas\Evaluation\Views\Evaluationtables\Details.cshtml" />
+    <Content Include="Areas\Evaluation\Views\Evaluationtables\Edit.cshtml" />
+    <Content Include="Areas\Evaluation\Views\Evaluationtables\Index.cshtml" />
+    <Content Include="Areas\Evaluation\Views\Qiymetlendirme\Insert.cshtml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -611,6 +619,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Evaluation\Models\" />
+    <Folder Include="Areas\Evaluation\Views\Evtest\" />
     <Folder Include="Areas\Evaluation\Views\Mytimetable\" />
     <Folder Include="Areas\Evaluation\Views\Shared\" />
     <Folder Include="Views\Base\" />

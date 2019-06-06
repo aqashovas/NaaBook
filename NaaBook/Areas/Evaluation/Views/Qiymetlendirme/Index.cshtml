@@ -1,5 +1,4 @@
-﻿@model List<NaaBook.Models.Student> 
-@{
+﻿@{
     Layout = null;
 }
 
@@ -25,48 +24,6 @@
         <a href="@Url.Action("index","anasehife")"><i class="fas fa-child"></i> </a>
         <a href="@Url.Action("index","anasehife")"> <i class="fas fa-home"></i></a>
     </div>  
-    <section id="studentev">
-        <div class="card shadow mb-4">
-            <div class="card-body">
-                @using (Html.BeginForm("insert", "qiymetlendirme", FormMethod.Post))
-                {
-                    @Html.AntiForgeryToken()
-
-                <div class="form-horizontal">
-                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-
-                    @foreach (var item in Model)
-                    {
-                        <div class="form-group">
-                            <h2>Tələbənin adı,soyadı,ata adı</h2>
-                            <div class="col-md-6">
-                                @Html.TextBoxFor(model => model.Name, new { htmlAttributes = new { @class = "form-control" } } ,new { Value="br" } )
-                                @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
-                            </div>
-                        </div>
-                    }
-
-
-
-
-
-
-
-
-
-
-                    <div class="form-group">
-                        <div class="col-md-offset-2 col-md-12">
-                            <input type="submit" value="Create" class="btn btn-default" />
-                        </div>
-                    </div>
-                </div>
-                }
-                <div>
-                    @Html.ActionLink("Back to List", "Index")
-                </div>
-            </div>
-        </div>
-    </section>
+    
 </body>
 </html>
