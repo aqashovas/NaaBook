@@ -21,7 +21,7 @@ namespace NaaBook.Areas.Evaluation.Controllers
 
             foreach (var item in timetable)
             {
-                groupid.Add(item.TeacherId);
+                groupid.Add(item.GroupId);
             }
             var grouplist = db.Groups.Where(t => groupid.Contains(t.Id)).ToList();
 

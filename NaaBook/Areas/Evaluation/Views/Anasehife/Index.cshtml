@@ -6,10 +6,10 @@
 
 <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-   @foreach (var item in Model)
-   {
-       <a href="#" class="display-5 text-orange">@item.Name</a>
-   }
+    @foreach (var item in Model)
+    {
+        <a href="@Url.Action("index","qiymetlendirme",new {id=item.Id })" class="display-5 text-orange">@item.Name</a>
+    }
 
 
 </div>
@@ -20,14 +20,16 @@
         <div class="row mbr-justify-content-center">
 
             <div class="col-lg-6 mbr-col-md-10">
-                <div class="wrap">
+                <div class="wrap" data-action="@Url.Action("index","cedvelim")">
                     <div class="ico-wrap">
                         <i class="mbr-iconfont far fa-newspaper"></i>
                         <!-- <span class="mbr-iconfont fa-volume-up fa"></span> -->
                     </div>
                     <div class="text-wrap vcenter">
                         <h2 class="mbr-fonts-style mbr-bold mbr-section-title3 display-5">Dərs <span class="display-5">Cədvəlim</span></h2>
+
                         <p class="mbr-fonts-style text1 mbr-text display-6">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</p>
+
                     </div>
                 </div>
             </div>
@@ -38,13 +40,13 @@
                     </div>
                     <div class="text-wrap vcenter">
                         <h2 class="mbr-fonts-style mbr-bold mbr-section-title3 display-5">
-                            Qruplarım                            
+                            Qruplarım
                         </h2>
                         <p class="mbr-fonts-style text1 mbr-text display-6">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</p>
                     </div>
                 </div>
             </div>
-            
+
 
 
 
@@ -68,3 +70,4 @@
         }
     </script>
 }
+
