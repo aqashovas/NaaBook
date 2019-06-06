@@ -35,7 +35,8 @@ namespace NaaBook.Areas.Evaluation.Controllers
             {
                 studentid.Add(item.Id);
             }
-            ViewBag.StudentId = new SelectList(db.Students.Where(s=>studentid.Contains(s.Id)).ToList(), "Id", "Name");
+            string Fullname = db.Students.FirstOrDefault(s => studentid.Contains(s.Id)).Surname + " " + db.Students.FirstOrDefault(s => studentid.Contains(s.Id)).Name + " " + db.Students.FirstOrDefault(s => studentid.Contains(s.Id)).Fathername; ;
+            ViewBag.StudentId = new SelectList(db.Students.Where(s=>studentid.Contains(s.Id)).ToList(), "Id", "Fullname");
             ViewBag.SubjectId = new SelectList(db.Subjects.Where(t => subjectid.Contains(t.Id)).ToList(), "Id", "Name");
 
             return View();
