@@ -1,5 +1,6 @@
 ﻿@model NaaBook.Models.Evaluationtable
 
+
 @{
     Layout = null;
 }
@@ -26,8 +27,8 @@
         <a href="@Url.Action("index","anasehife")"><i class="fas fa-child"></i> </a>
         <a href="@Url.Action("index","anasehife")"> <i class="fas fa-home"></i></a>
     </div>
-    <section id="studenteva">
-        @using (Html.BeginForm())
+        <section id="studenteva">
+        @using (Html.BeginForm("insert", "qiymetlendirme", FormMethod.Post))
         {
             @Html.AntiForgeryToken()
 
@@ -36,7 +37,7 @@
                 <hr />
                 @Html.ValidationSummary(true, "", new { @class = "text-danger" })
                 <div class="form-group">
-                    @Html.LabelFor(model => model.StudentId, "StudentId", htmlAttributes: new { @class = "control-label col-md-2" })
+                    @Html.LabelFor(model => model.StudentId, "StudentId", htmlAttributes: new { @class = "control-label col-md-2 text-orange" })
                     <div class="col-md-10">
                         @Html.DropDownList("StudentId", null,htmlAttributes: new { @class = "form-control" })
                         @Html.ValidationMessageFor(model => model.StudentId, "", new { @class = "text-danger" })
@@ -44,7 +45,7 @@
                 </div>
 
                 <div class="form-group">
-                    @Html.LabelFor(model => model.MarkOrAttendanceFirst, htmlAttributes: new { @class = "control-label col-md-2" })
+                    @Html.LabelFor(model => model.MarkOrAttendanceFirst, htmlAttributes: new { @class = "control-label col-md-2 text-orange" })
                     <div class="col-md-10">
                         @Html.EditorFor(model => model.MarkOrAttendanceFirst, new { htmlAttributes = new { @class = "form-control" } })
                         @Html.ValidationMessageFor(model => model.MarkOrAttendanceFirst, "", new { @class = "text-danger" })
@@ -52,8 +53,9 @@
                 </div>
 
                 <div class="form-group">
-                    @Html.LabelFor(model => model.MarkOrAttendanceSecond, htmlAttributes: new { @class = "control-label col-md-2" })
+                    @Html.LabelFor(model => model.MarkOrAttendanceSecond, htmlAttributes: new { @class = "control-label col-md-2 text-orange" })
                     <div class="col-md-10">
+
                         @Html.EditorFor(model => model.MarkOrAttendanceSecond, new { htmlAttributes = new { @class = "form-control" } })
                         @Html.ValidationMessageFor(model => model.MarkOrAttendanceSecond, "", new { @class = "text-danger" })
                     </div>
@@ -62,7 +64,7 @@
 
 
                 <div class="form-group">
-                    @Html.LabelFor(model => model.SubjectId, "SubjectId", htmlAttributes: new { @class = "control-label col-md-2" })
+                    @Html.LabelFor(model => model.SubjectId, "SubjectId", htmlAttributes: new { @class = "control-label col-md-2 text-orange" })
                     <div class="col-md-10">
                         @Html.DropDownList("SubjectId", null, htmlAttributes: new { @class = "form-control" })
                         @Html.ValidationMessageFor(model => model.SubjectId, "", new { @class = "text-danger" })
@@ -73,7 +75,7 @@
 
                 <div class="form-group">
                     <div class="col-md-offset-2 col-md-10">
-                        <input type="submit" value="Qiymətləndir" class="btn btn-default" />
+                        <input type="submit" value="Qiymətləndir" class="btn btn-default text-orange" />
                     </div>
                 </div>
             </div>
@@ -83,5 +85,91 @@
             @Html.ActionLink("Back to List", "Index")
         </div>*@
     </section>
+        @*<section id="studentfreework">
+            @using (Html.BeginForm("insert", "qiymetlendirme", FormMethod.Post))
+            {
+                @Html.AntiForgeryToken()
+
+                <div class="form-horizontal">
+                    <h4>Freework</h4>
+                    <hr />
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.StudentId, "StudentId", htmlAttributes: new { @class = "control-label col-md-2 text-orange" })
+                        <div class="col-md-10">
+                            @Html.DropDownList("StudentId", null, htmlAttributes: new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.StudentId, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.SubjectId, "SubjectId", htmlAttributes: new { @class = "control-label col-md-2 text-orange" })
+                        <div class="col-md-10">
+                            @Html.DropDownList("SubjectId", null, htmlAttributes: new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.SubjectId, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Count, htmlAttributes: new { @class = "control-label col-md-2 text-orange" })
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.Count, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.Count, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-offset-2 col-md-10">
+                            <input type="submit" value="Əlavə et" class="btn btn-default" />
+                        </div>
+                    </div>
+                </div>
+            }
+
+          
+        </section>
+        <section id="studentlab">
+            @using (Html.BeginForm("insert", "qiymetlendirme", FormMethod.Post))
+            {
+                @Html.AntiForgeryToken()
+
+                <div class="form-horizontal">
+                    <h4>Laboratory</h4>
+                    <hr />
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.StudentId, "StudentId", htmlAttributes: new { @class = "control-label col-md-2 text-orange" })
+                        <div class="col-md-10">
+                            @Html.DropDownList("StudentId", null, htmlAttributes: new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.StudentId, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.SubjectId, "SubjectId", htmlAttributes: new { @class = "control-label col-md-2 text-orange" })
+                        <div class="col-md-10">
+                            @Html.DropDownList("SubjectId", null, htmlAttributes: new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.SubjectId, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Count, htmlAttributes: new { @class = "control-label col-md-2 text-orange" })
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.Count, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.Count, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-offset-2 col-md-10">
+                            <input type="submit" value="Əlavə et" class="btn btn-default" />
+                        </div>
+                    </div>
+                </div>
+            }
+
+         
+        </section>*@
 </body>
 </html>

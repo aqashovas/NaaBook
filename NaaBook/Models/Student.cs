@@ -11,13 +11,11 @@ namespace NaaBook.Models
         public int Id { get; set; }
 
         //ad
-        public string Name { get; set; }
 
         //soyad
-        public string Surname { get; set; }
 
         //ataadı
-        public string Fathername { get; set; }
+        public string Fullname { get; set; }
 
         //istifadəçi adı
         public string Username { get; set; }

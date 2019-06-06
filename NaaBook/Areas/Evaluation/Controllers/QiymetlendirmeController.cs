@@ -35,19 +35,20 @@ namespace NaaBook.Areas.Evaluation.Controllers
             {
                 studentid.Add(item.Id);
             }
-            string Fullname = db.Students.FirstOrDefault(s => studentid.Contains(s.Id)).Surname + " " + db.Students.FirstOrDefault(s => studentid.Contains(s.Id)).Name + " " + db.Students.FirstOrDefault(s => studentid.Contains(s.Id)).Fathername; ;
             ViewBag.StudentId = new SelectList(db.Students.Where(s=>studentid.Contains(s.Id)).ToList(), "Id", "Fullname");
             ViewBag.SubjectId = new SelectList(db.Subjects.Where(t => subjectid.Contains(t.Id)).ToList(), "Id", "Name");
 
             return View();
         }
         [HttpPost]
-        public ActionResult Insert(Evaluationtable evaluationtable)
+        public ActionResult Insert(Evaluationtable evaluationtable,Freework freework,Laboratory laboratory)
         {
             int idt = Convert.ToInt32(Session["UserIdt"]);
             if (ModelState.IsValid)
             {
                 db.Evaluationtables.Add(evaluationtable);
+                db.Freeworks.Add(freework);
+                db.Laboratories.Add(laboratory);
                 evaluationtable.TeacherId = idt;
                 evaluationtable.Time = DateTime.Now.Day.ToString() + "-" + DateTime.Now.Month.ToString() + "-" + DateTime.Now.Year.ToString();
                 db.SaveChanges();

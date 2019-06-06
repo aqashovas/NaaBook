@@ -127,7 +127,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Evaluation\Controllers\AnasehifeController.cs" />
-    <Compile Include="Areas\Evaluation\Controllers\EvaluationtablesController.cs" />
+    <Compile Include="Areas\Evaluation\Controllers\LaboratoriesController.cs" />
     <Compile Include="Areas\Evaluation\Controllers\LoginEvController.cs" />
     <Compile Include="Areas\Evaluation\Controllers\CedvelimController.cs" />
     <Compile Include="Areas\Evaluation\Controllers\QiymetlendirmeController.cs" />
@@ -202,6 +202,10 @@
     <Compile Include="Migrations\201906051751137_userTeacher.cs" />
     <Compile Include="Migrations\201906051751137_userTeacher.Designer.cs">
       <DependentUpon>201906051751137_userTeacher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906062009467_Fullnamestudent.cs" />
+    <Compile Include="Migrations\201906062009467_Fullnamestudent.Designer.cs">
+      <DependentUpon>201906062009467_Fullnamestudent.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AcademyContext.cs" />
@@ -571,6 +575,16 @@
     <Content Include="Areas\Evaluation\Views\Evaluationtables\Edit.cshtml" />
     <Content Include="Areas\Evaluation\Views\Evaluationtables\Index.cshtml" />
     <Content Include="Areas\Evaluation\Views\Qiymetlendirme\Insert.cshtml" />
+    <Content Include="Areas\Evaluation\Views\Freeworks\Create.cshtml" />
+    <Content Include="Areas\Evaluation\Views\Freeworks\Delete.cshtml" />
+    <Content Include="Areas\Evaluation\Views\Freeworks\Details.cshtml" />
+    <Content Include="Areas\Evaluation\Views\Freeworks\Edit.cshtml" />
+    <Content Include="Areas\Evaluation\Views\Freeworks\Index.cshtml" />
+    <Content Include="Areas\Evaluation\Views\Laboratories\Create.cshtml" />
+    <Content Include="Areas\Evaluation\Views\Laboratories\Delete.cshtml" />
+    <Content Include="Areas\Evaluation\Views\Laboratories\Details.cshtml" />
+    <Content Include="Areas\Evaluation\Views\Laboratories\Edit.cshtml" />
+    <Content Include="Areas\Evaluation\Views\Laboratories\Index.cshtml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -680,6 +694,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201906051751137_userTeacher.resx">
       <DependentUpon>201906051751137_userTeacher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906062009467_Fullnamestudent.resx">
+      <DependentUpon>201906062009467_Fullnamestudent.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
