@@ -31,8 +31,8 @@
         {
             @Html.AntiForgeryToken()
 
-            <div class="form-horizontal">
-                <h4>Qiymətləndirmə cədvəli</h4>
+            <div class="form-horizontal formstyle">
+                <h4 class="text-orange">Qiymətləndirmə cədvəli</h4>
                 <hr />
                 @Html.ValidationSummary(true, "", new { @class = "text-danger" })
                 <div class="form-group">

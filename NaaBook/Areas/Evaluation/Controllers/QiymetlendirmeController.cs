@@ -41,11 +41,20 @@ namespace NaaBook.Areas.Evaluation.Controllers
             return View();
         }
         [HttpPost]
-        public ActionResult Insert()
+        public ActionResult Insert(Evaluationtable evaluationtable)
         {
-            
+            int idt = Convert.ToInt32(Session["UserIdt"]);
+            if (ModelState.IsValid)
+            {
+                db.Evaluationtables.Add(evaluationtable);
+                evaluationtable.TeacherId = idt;
+                evaluationtable.Time = DateTime.Now.Day.ToString() + "-" + DateTime.Now.Month.ToString() + "-" + DateTime.Now.Year.ToString();
+                db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+           
 
-            return View();
+            return View(evaluationtable);
         }
 
     }
