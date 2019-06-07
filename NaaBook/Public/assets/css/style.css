@@ -7,7 +7,6 @@ body {
     font-size: 14px;
     color: #797979;
     width: 100%;
-    
     padding: 0;
     margin-left: 0;
     margin-right: 0;
@@ -76,17 +75,14 @@ body {
 
 .text-primary {
     color: #ee997b !important;
-    
 }
 
 .text-finence {
     color: #13A0B2 !important;
-    
 }
 
 .text-mega {
     color: #ee997b !important;
-   
 }
 
 .text-orange {
@@ -328,8 +324,8 @@ ul {
 }
 
 
-.sociallinks  li a i{
-   line-height:1 rem;
+.sociallinks li a i {
+    line-height: 1 rem;
 }
 /*
 Separator
@@ -354,8 +350,9 @@ Separator
     margin: 20px 0px;
     background: #000;
 }
-.separator p{
-    font-size:20px;
+
+.separator p {
+    font-size: 20px;
 }
 /*
 Button
@@ -818,7 +815,7 @@ Nav Menu style
 
 .navbar-brand {
     height: 80px;
-    padding:0px 15px;
+    padding: 0px 15px;
 }
 
 .navbar-nav > li > a {
@@ -884,9 +881,11 @@ Home Section style
     font-weight: 700;
     line-height: 6.5rem;
 }
+
 .nav li a {
     font-family: 'Montserrat', sans-serif;
 }
+
 .home_text h5 {
     font-family: 'Crimson Text', serif;
     font-size: 18px;
@@ -964,7 +963,7 @@ Footer Section style
 }
 
     .main_footer i {
-        padding: 0px 5px;      
+        padding: 0px 5px;
         font-size: 24px;
     }
 
@@ -1040,6 +1039,7 @@ Footer Section style
 .specialfont {
     font-family: 'Gloria Hallelujah', cursive !important;
 }
+
 .socail_item {
     float: left;
     width: 30.5%;
@@ -1055,7 +1055,6 @@ Footer Section style
     padding-top: 4rem;
     padding-bottom: 5rem;
     background-color: white;
-   
 }
 
 .wrap {
@@ -1099,16 +1098,16 @@ Footer Section style
 .display-5 {
     font-family: 'Source Sans Pro',sans-serif;
     font-size: 1.4rem;
-    color:white;
+    color: white;
 }
 
 .mbr-bold {
     font-weight: 700;
 }
-.mbr-bold span a {
-color:white;
 
-}
+    .mbr-bold span a {
+        color: white;
+    }
 
 .vcenter p {
     padding-top: 0.5rem;
@@ -1119,8 +1118,9 @@ color:white;
 .display-6 {
     font-family: 'Source Sans Pro',sans-serif;
     font-size: 1rem;
-    color:white;
+    color: white;
 }
+
 .sidenav {
     height: 100%;
     width: 0;
@@ -1145,7 +1145,6 @@ color:white;
 
         .sidenav a:hover {
             color: -webkit-linear-gradient(bottom, #7579ff, #b224ef);
-           
         }
 
     .sidenav .closebtn {
@@ -1155,17 +1154,21 @@ color:white;
         font-size: 36px;
         margin-left: 50px;
     }
+
 #teacherlist {
     padding-top: 4rem;
     padding-bottom: 5rem;
 }
+
 #timetableup {
     padding-top: 4rem;
 }
+
 #timetabledown {
     padding-top: 4rem;
     padding-bottom: 4rem;
 }
+
 .sidebar2 {
     height: 100%;
     width: 103px;
@@ -1187,26 +1190,70 @@ color:white;
         margin-top: 50px;
     }
 
-    .sidebar2 a:hover {
-        color:  #b224ef;
-    }
-    .sidebar2 a i {
-        font-size:43px;
-    }
-    .wr2{
-        width:230px;
-    }
+        .sidebar2 a:hover {
+            color: #b224ef;
+        }
+
+        .sidebar2 a i {
+            font-size: 43px;
+        }
+
+.wr2 {
+    width: 230px;
+}
+
 #labvsfreework {
     margin-left: 110px;
+    margin-top: 20px;
 }
+
 #evsec {
     margin-left: 110px;
+    margin-top: 20px;
 }
+
+#studenteva {
+    margin-left: 110px;
+    margin-top: 20px;
+}
+
 #evsec table {
-font-size:20px;
-
+    font-size: 20px;
 }
 
+#labvsfreework table {
+    font-size: 20px;
+}
+
+#themessec {
+    margin-left: 110px;
+}
+
+#themessec table {
+    font-size: 20px;
+}
+
+.formstyle {
+    font-size: 22px !important;
+}
+
+.form-group {
+    margin-bottom: 10px !important;
+}
+
+.btn {
+    color: white !important;
+    border-color: #9152f8 !important;
+    background-color: #9152f8 !important;
+}
+
+#studentfreework {
+    margin-left: 110px;
+}
+
+#studentlab {
+    margin-left: 110px;
+}
 /*.navbar-toggle button i {
     color: #ffb834ba;
 }

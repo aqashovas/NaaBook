@@ -132,6 +132,7 @@
     <Compile Include="Areas\Evaluation\Controllers\CedvelimController.cs" />
     <Compile Include="Areas\Evaluation\Controllers\QiymetlendirmeController.cs" />
     <Compile Include="Areas\Evaluation\EvaluationAreaRegistration.cs" />
+    <Compile Include="Areas\Manage\ManageAreaRegistration.cs" />
     <Compile Include="Auth.cs" />
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\CedvelController.cs" />
@@ -207,8 +208,17 @@
     <Compile Include="Migrations\201906062009467_Fullnamestudent.Designer.cs">
       <DependentUpon>201906062009467_Fullnamestudent.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201906071518124_Admin.cs" />
+    <Compile Include="Migrations\201906071518124_Admin.Designer.cs">
+      <DependentUpon>201906071518124_Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906071522471_Adminuser.cs" />
+    <Compile Include="Migrations\201906071522471_Adminuser.Designer.cs">
+      <DependentUpon>201906071522471_Adminuser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AcademyContext.cs" />
+    <Compile Include="Models\Admin.cs" />
     <Compile Include="Models\Colloquium.cs" />
     <Compile Include="Models\Department.cs" />
     <Compile Include="Models\Evaluationtable.cs" />
@@ -588,6 +598,7 @@
     <Content Include="Areas\Evaluation\Views\Qiymetlendirme\Serbestis.cshtml" />
     <Content Include="Areas\Evaluation\Views\Qiymetlendirme\Gundelik.cshtml" />
     <Content Include="Areas\Evaluation\Views\Shared\_layout.cshtml" />
+    <Content Include="Areas\Manage\Views\web.config" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -638,6 +649,9 @@
     <Folder Include="Areas\Evaluation\Models\" />
     <Folder Include="Areas\Evaluation\Views\Evtest\" />
     <Folder Include="Areas\Evaluation\Views\Mytimetable\" />
+    <Folder Include="Areas\Manage\Controllers\" />
+    <Folder Include="Areas\Manage\Models\" />
+    <Folder Include="Areas\Manage\Views\Shared\" />
     <Folder Include="Views\Base\" />
   </ItemGroup>
   <ItemGroup>
@@ -699,6 +713,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201906062009467_Fullnamestudent.resx">
       <DependentUpon>201906062009467_Fullnamestudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906071518124_Admin.resx">
+      <DependentUpon>201906071518124_Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906071522471_Adminuser.resx">
+      <DependentUpon>201906071522471_Adminuser.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -42,6 +42,8 @@ namespace NaaBook.Models
 
         public DbSet<Lessonsection> Lessonsections { get; set; }
 
+        public DbSet<Admin> Admins { get; set; }
+
 
 
 
