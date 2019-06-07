@@ -7,10 +7,10 @@ namespace NaaBook.Viewmodels
 {
     public class VwEvaluation
     {
-        public List<Evaluationtable> Evaluationtables { get; set; }
+        public Evaluationtable Evaluationtable { get; set; }
 
-        public List<Freework> Freeworks { get; set; }
+        public Freework Freework { get; set; }
 
-        public List<Laboratory> Laboratories { get; set; }
+        public Laboratory Laboratory { get; set; }
     }
 }

@@ -8,7 +8,13 @@
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     @foreach (var item in Model)
     {
-        <a href="@Url.Action("insert","qiymetlendirme",new {id=item.Id })" class="display-5 text-orange">@item.Name</a>
+        <p class="display-5 text-orange">@item.Name</p>
+        <a href="@Url.Action("lab","qiymetlendirme",new {id=item.Id })" class="display-5 text-orange">Lab</a>
+        <a href="@Url.Action("serbestis","qiymetlendirme",new {id=item.Id })" class="display-5 text-orange">Sərbəst işlər</a>
+        <a href="@Url.Action("gundelik","qiymetlendirme",new {id=item.Id })" class="display-5 text-orange">Qiymətləndirmə və davamiyyət</a>
+
+
+
     }
 
 
