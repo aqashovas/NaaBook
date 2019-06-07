@@ -110,24 +110,9 @@ namespace NaaBook.Areas.Evaluation.Controllers
             return View(lessonmaterial);
         }
 
-        // GET: Evaluation/Sillabus/Delete/5
-        public ActionResult Delete(int? id)
-        {
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-            Lessonmaterial lessonmaterial = db.Lessonmaterials.Find(id);
-            if (lessonmaterial == null)
-            {
-                return HttpNotFound();
-            }
-            return View(lessonmaterial);
-        }
-
+      
         // POST: Evaluation/Sillabus/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
+        
         public ActionResult DeleteConfirmed(int id)
         {
             Lessonmaterial lessonmaterial = db.Lessonmaterials.Find(id);
