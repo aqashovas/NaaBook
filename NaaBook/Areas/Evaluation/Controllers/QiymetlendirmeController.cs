@@ -76,7 +76,7 @@ namespace NaaBook.Areas.Evaluation.Controllers
                 
                
             }
-            return View("index");
+            return View("lab");
 
         }
         public ActionResult Serbestis(int id)
@@ -162,7 +162,7 @@ namespace NaaBook.Areas.Evaluation.Controllers
 
 
             }
-            return View("index");
+            return View("serbestis");
 
         }
 
@@ -206,7 +206,7 @@ namespace NaaBook.Areas.Evaluation.Controllers
 
 
             }
-            return View("index");
+            return View("kollokvium");
 
         }
 

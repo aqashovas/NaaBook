@@ -146,7 +146,6 @@
     <Compile Include="Areas\Manage\Controllers\LaboratoriesController.cs" />
     <Compile Include="Areas\Manage\Controllers\LessonsectionsController.cs" />
     <Compile Include="Areas\Manage\Controllers\LoginSystemController.cs" />
-    <Compile Include="Areas\Manage\Controllers\SettingsController.cs" />
     <Compile Include="Areas\Manage\Controllers\StudentsController.cs" />
     <Compile Include="Areas\Manage\Controllers\SubjectsController.cs" />
     <Compile Include="Areas\Manage\Controllers\TeachersController.cs" />

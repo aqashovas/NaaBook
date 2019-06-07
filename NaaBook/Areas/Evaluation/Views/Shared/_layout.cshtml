@@ -1,4 +1,9 @@
-﻿<!doctype html>
+﻿@{
+
+
+   NaaBook.Models.Setting setting = ViewBag.Setting as NaaBook.Models.Setting;
+}
+<!doctype html>
 <html class="no-js" lang="az">
 <head>
     <meta charset="utf-8">
@@ -106,7 +111,7 @@
 
         <!--Home Sections-->
 
-        <section id="hello" class="home bg-mega" style="background-image:url('/Areas/Evaluation/Public/assets/images/background/layimg.jpg'); background-repeat: no-repeat;background-size:cover;">
+        <section id="hello" class="home bg-mega" style="background-image:url('/Areas/Evaluation/Public/assets/images/background/@setting.Headerimg'); background-repeat: no-repeat;background-size:cover;">
             <div class="overlay"></div>
             <div class="container">
                 <div class="row">
@@ -133,8 +138,8 @@
                 <div class="row">
                     <div class="main_company roomy-100 text-center">
                         <h3 class="text-uppercase text-orange">MAA</h3>
-                        <p class="text-orange">Adres</p>
-                        <p class="text-orange">(+84). 123. 456. 789  -  info@poiseidon.lnk</p>
+                        <p class="text-orange">@setting.Address</p>
+                        <p class="text-orange">+<a href="https://wa.me/@setting.Phone" class="text-orange">@setting.Phone</a> - <span class="text-orange">@setting.Mail</span> </p>
                     </div>
                 </div>
             </div>
