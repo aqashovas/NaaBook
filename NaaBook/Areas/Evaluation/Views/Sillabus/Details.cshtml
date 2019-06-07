@@ -1,0 +1,81 @@
+﻿@model NaaBook.Models.Lessonmaterial
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html lang="az">
+<head>
+    <meta name="viewport" content="width=device-width" />
+
+    <title>Index</title>
+    <!--Theme custom css -->
+    <link rel="stylesheet" href="~/Areas/Evaluation/Public/assets/css/style.css">
+    <link rel="stylesheet" href="~/Public/assets/css/style.css">
+
+    <!--<link rel="stylesheet" href="~/Areas/Evaluation/Public/assets/css/colors/maron.css">-->
+    <!--Theme Responsive css-->
+    <link rel="stylesheet" href="~/Areas/Evaluation/Public/assets/css/responsive.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="sidebar2">
+
+
+        <a href="@Url.Action("index","cedvelim")"> <i class="far fa-newspaper"></i> </a>
+        <a href="@Url.Action("index","qiymetlendirme")"><i class="fas fa-child"></i> </a>
+        <a href="@Url.Action("index","anasehife")"> <i class="fas fa-home"></i></a>
+    </div>
+    <section id="evsec">
+        <div>
+            <h4 class="text-orange">Sillabus</h4>
+            <hr />
+            <dl class="dl-horizontal">
+                <dt class="text-orange">
+                   Grupun adı
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Group.Name)
+                </dd>
+
+                <dt class="text-orange">
+                    Fənnin adı
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Subject.Name)
+                </dd>                        
+                              
+                <dt class="text-orange">
+                    Tarix
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Day)
+                </dd>
+
+                <dt class="text-orange">
+                   
+                        Mövzu adı
+                                        
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Theme)
+                </dd>
+
+            </dl>
+        </div>
+        <p>
+            <a href="@Url.Action("edit","sillabus",new { id=Model.Id})" class="text-orange">
+                <h2 class="text-orange">Yenilə</h2>
+
+            </a>           
+        </p>
+    </section>
+</body>
+</html>
