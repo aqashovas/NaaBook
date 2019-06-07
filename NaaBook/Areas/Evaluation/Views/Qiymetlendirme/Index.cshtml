@@ -1,4 +1,5 @@
-﻿@{
+﻿@model NaaBook.Viewmodels.VwEvaluation
+@{
     Layout = null;
 }
 
@@ -10,20 +11,132 @@
 
     <title>Index</title>
     <!--Theme custom css -->
-    <link rel="stylesheet" href="~/Public/assets/css/style.css">
-    <!--<link rel="stylesheet" href="~/Public/assets/css/colors/maron.css">-->
+    <link rel="stylesheet" href="~/Areas/Evaluation/Public/assets/css/style.css">
+    <!--<link rel="stylesheet" href="~/Areas/Evaluation/Public/assets/css/colors/maron.css">-->
     <!--Theme Responsive css-->
-    <link rel="stylesheet" href="~/Public/assets/css/responsive.css" />
+    <link rel="stylesheet" href="~/Areas/Evaluation/Public/assets/css/responsive.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 </head>
 
 <body>
     <div class="sidebar2">
 
+
         <a href="@Url.Action("index","cedvelim")"> <i class="far fa-newspaper"></i> </a>
-        <a href="@Url.Action("index","anasehife")"><i class="fas fa-child"></i> </a>
+        <a href="@Url.Action("index","qiymetlendirme")"><i class="fas fa-child"></i> </a>
+        <a href="@Url.Action("serbestis","qiymetlendirme")"> <i class="fas fa-file-word"></i></a>
+        <a href="@Url.Action("lab","qiymetlendirme")"> <i class="fas fa-vial"></i></a>
+        <a href="@Url.Action("gundelik","qiymetlendirme")"> <i class="fas fa-book"></i></a>
         <a href="@Url.Action("index","anasehife")"> <i class="fas fa-home"></i></a>
-    </div>  
-    
+    </div>
+    <section id="evsec">
+        <div class="container">
+            <div class="row">
+                <div class="table-responsive">
+                    <h2 class="text-orange">Qiymətləndirmə və davamiyyət</h2>
+                    <table class="table" border="1" bordercolor="#9152f8">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="text-orange">Günlər</th>
+                                <th scope="col" class="text-orange">Fənlər</th>
+                                <th scope="col" class="text-orange">Tələbələr</th>
+                                <th scope="col" class="text-orange">1-ci hissə</th>
+                                <th scope="col" class="text-orange">2-ci hissə</th>
+
+
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model.Evaluationtable)
+                            {
+                                <tr>
+                                    <th scope="row" class="text-orange">@item.Time</th>
+                                    <th scope="row" class="text-orange">@item.Subject.Name</th>
+                                    <td>@item.Student.Fullname</td>
+                                    <td>@item.MarkOrAttendanceFirst</td>
+                                    <td>@item.MarkOrAttendanceSecond</td>
+                                </tr>
+                            }
+
+
+
+
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="labvsfreework">
+        <div class="container">
+            <div class="row">
+                <div class="table-responsive">
+                    <h2 class="text-orange">Sərbəst işlər</h2>
+                    <table class="table" border="1" bordercolor="#9152f8">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="text-orange">Fənlər</th>
+                                <th scope="col" class="text-orange">Tələbələr</th>
+                                <th scope="col" class="text-orange">Sərbəst işlərin sayı</th>
+
+
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model.Freework)
+                            {
+                                <tr>
+                                    <th scope="row" class="text-orange">@item.Subject.Name</th>
+
+                                    <td>@item.Student.Fullname</td>
+                                    <td>@item.Count</td>
+                                </tr>
+                            }
+
+
+
+
+
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-responsive">
+                    <h2 class="text-orange">Sərbəst işlər</h2>
+                    <table class="table" border="1" bordercolor="#9152f8">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="text-orange">Fənlər</th>
+                                <th scope="col" class="text-orange">Tələbələr</th>
+                                <th scope="col" class="text-orange">Laboratoriya işlərin sayı</th>
+
+
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model.Laboratory)
+                            {
+                                <tr>
+                                    <th scope="row" class="text-orange">@item.Subject.Name</th>
+
+                                    <td>@item.Student.Fullname</td>
+                                    <td>@item.Count</td>
+                                </tr>
+                            }
+
+
+
+
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </body>
 </html>

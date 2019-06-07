@@ -44,5 +44,12 @@ namespace NaaBook.Controllers
             string a = Crypto.HashPassword("000");
             return Content(a);
         }
+        public ActionResult Logout()
+        {
+            Session.Remove("login");
+            Session.Remove("UserId");
+
+            return RedirectToAction("index");
+        }
     }
 }

@@ -574,7 +574,6 @@
     <Content Include="Areas\Evaluation\Views\Evaluationtables\Details.cshtml" />
     <Content Include="Areas\Evaluation\Views\Evaluationtables\Edit.cshtml" />
     <Content Include="Areas\Evaluation\Views\Evaluationtables\Index.cshtml" />
-    <Content Include="Areas\Evaluation\Views\Qiymetlendirme\Insert.cshtml" />
     <Content Include="Areas\Evaluation\Views\Freeworks\Create.cshtml" />
     <Content Include="Areas\Evaluation\Views\Freeworks\Delete.cshtml" />
     <Content Include="Areas\Evaluation\Views\Freeworks\Details.cshtml" />
@@ -585,6 +584,10 @@
     <Content Include="Areas\Evaluation\Views\Laboratories\Details.cshtml" />
     <Content Include="Areas\Evaluation\Views\Laboratories\Edit.cshtml" />
     <Content Include="Areas\Evaluation\Views\Laboratories\Index.cshtml" />
+    <Content Include="Areas\Evaluation\Views\Qiymetlendirme\Lab.cshtml" />
+    <Content Include="Areas\Evaluation\Views\Qiymetlendirme\Serbestis.cshtml" />
+    <Content Include="Areas\Evaluation\Views\Qiymetlendirme\Gundelik.cshtml" />
+    <Content Include="Areas\Evaluation\Views\Shared\_layout.cshtml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -635,7 +638,6 @@
     <Folder Include="Areas\Evaluation\Models\" />
     <Folder Include="Areas\Evaluation\Views\Evtest\" />
     <Folder Include="Areas\Evaluation\Views\Mytimetable\" />
-    <Folder Include="Areas\Evaluation\Views\Shared\" />
     <Folder Include="Views\Base\" />
   </ItemGroup>
   <ItemGroup>

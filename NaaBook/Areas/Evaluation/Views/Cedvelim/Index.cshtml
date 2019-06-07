@@ -1,8 +1,11 @@
 ﻿@model NaaBook.Viewmodels.VwTimetable
+
 @{
     ViewBag.Title = "Index";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    Layout = "~/Areas/Evaluation/Views/Shared/_layout.cshtml";
 }
+
+
 
 <section id="timetableup">
     <div class="container">
@@ -31,28 +34,28 @@
                             <th scope="row">2</th>
                             @foreach (var item in Model.Timetables2Up)
                             {
-                            <td>@item.Subject.Name <br /> @item.Group.Name<br />@item.Classroom</td>
+                                <td>@item.Subject.Name <br /> @item.Group.Name<br />@item.Classroom</td>
                             }
                         </tr>
                         <tr>
                             <th scope="row">3</th>
                             @foreach (var item in Model.Timetables3Up)
                             {
-                            <td>@item.Subject.Name <br /> @item.Group.Name <br />@item.Classroom</td>
+                                <td>@item.Subject.Name <br /> @item.Group.Name <br />@item.Classroom</td>
                             }
                         </tr>
                         <tr>
                             <th scope="row">4</th>
                             @foreach (var item in Model.Timetables4Up)
                             {
-                            <td>@item.Subject.Name <br /> @item.Group.Name<br />@item.Classroom </td>
+                                <td>@item.Subject.Name <br /> @item.Group.Name<br />@item.Classroom </td>
                             }
                         </tr>
                         <tr>
                             <th scope="row">5</th>
                             @foreach (var item in Model.Timetables5Up)
                             {
-                            <td>@item.Subject.Name <br /> @item.Group.Name <br />@item.Classroom </td>
+                                <td>@item.Subject.Name <br /> @item.Group.Name <br />@item.Classroom </td>
                             }
                         </tr>
                     </tbody>
@@ -82,7 +85,7 @@
                             <th scope="row">1</th>
                             @foreach (var item in Model.Timetables1Down)
                             {
-                            <td>@item.Subject.Name <br /> @item.Group.Name<br />@item.Classroom </td>
+                                <td>@item.Subject.Name <br /> @item.Group.Name<br />@item.Classroom </td>
                             }
                         </tr>
                         <tr>
@@ -120,4 +123,5 @@
 
     </div>
 </section>
+
 

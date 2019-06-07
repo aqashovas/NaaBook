@@ -39,5 +39,12 @@ namespace NaaBook.Areas.Evaluation.Controllers
             }
             return View(teacher);
         }
+        public ActionResult Logout()
+        {
+            Session.Remove("logint");
+            Session.Remove("UserIdt");
+
+            return RedirectToAction("index");
+        }
     }
 }

@@ -1198,19 +1198,32 @@ color:white;
     }
 #labvsfreework {
     margin-left: 110px;
+    margin-top:20px;
 }
 #evsec {
     margin-left: 110px;
+    margin-top: 20px;
 }
 #studenteva {
     margin-left: 110px;
+    margin-top: 20px;
 }
 #evsec table {
 font-size:20px;
 
 }
+#labvsfreework table {
+    font-size: 20px;
+}
+
+#themesec{
+    margin-left:110px;
+}
+    #themesec table {
+        font-size: 20px;
+    }
 .formstyle{
-    font-size:22px;
+    font-size:22px !important;
 }
 .form-group{
     margin-bottom:10px !important;
@@ -1219,6 +1232,12 @@ font-size:20px;
     color: white !important;
     border-color: #9152f8 !important;
     background-color: #9152f8 !important;
+}
+#studentfreework {
+    margin-left: 110px;
+}
+#studentlab {
+    margin-left: 110px;
 }
 /*.navbar-toggle button i {
     color: #ffb834ba;
