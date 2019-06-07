@@ -9,7 +9,7 @@ namespace NaaBook.Viewmodels
     public class VwJournal
     {
 
-        public int ? Laboratory { get; set; }
+        public string Laboratory { get; set; }
 
         public List<Evaluationtable> Evaluationtables { get; set; }
 
@@ -17,13 +17,13 @@ namespace NaaBook.Viewmodels
 
         public int Lessonsection { get; set; }
 
-        public int ? Freework { get; set; }
+        public string Freework { get; set; }
 
         public List<Teacher> Teachers { get; set; }
 
         public Exam Exam { get; set; }
 
-        public Colloquium Colloquium { get; set; }
+        public Colloquium  Colloquium { get; set; }
 
 
     }

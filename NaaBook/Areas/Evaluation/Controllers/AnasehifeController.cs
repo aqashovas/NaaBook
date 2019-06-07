@@ -8,7 +8,7 @@ using System.Web.Mvc;
 namespace NaaBook.Areas.Evaluation.Controllers
 {
     [EvAdmin]
-    public class AnasehifeController : Controller
+    public class AnasehifeController : BaseTController
     {
         private readonly AcademyContext db = new AcademyContext();
         // GET: Evaluation/Anasehife

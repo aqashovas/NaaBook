@@ -215,6 +215,7 @@ input[type="color"],
     box-shadow: inset 0 0px 0px rgba(0,0,0,.075);
     width: 100%;
     height: auto;
+    font-size: 20px;
 }
 
     .form-control:focus {
@@ -1198,14 +1199,17 @@ color:white;
     }
 #labvsfreework {
     margin-left: 110px;
-    margin-top:20px;
+    margin-right: 60px;
+    margin-top: 20px;
 }
 #evsec {
     margin-left: 110px;
+    margin-right: 60px;
     margin-top: 20px;
 }
 #studenteva {
     margin-left: 110px;
+    margin-right: 60px;
     margin-top: 20px;
 }
 #evsec table {
@@ -1216,10 +1220,11 @@ font-size:20px;
     font-size: 20px;
 }
 
-#themessec{
-    margin-left:110px;
+#themessec {
+    margin-left: 110px;
+    margin-right: 60px;
 }
-    #themesec table {
+    #themessec table {
         font-size: 20px;
     }
 .formstyle{
@@ -1232,12 +1237,15 @@ font-size:20px;
     color: white !important;
     border-color: #9152f8 !important;
     background-color: #9152f8 !important;
+    font-size: 25px !important;
 }
 #studentfreework {
     margin-left: 110px;
+    margin-right: 60px;
 }
 #studentlab {
     margin-left: 110px;
+    margin-right:60px;
 }
 /*.navbar-toggle button i {
     color: #ffb834ba;

@@ -189,3 +189,4 @@ C:\Users\Sabina123\Source\Repos\aqashovas\NaaBook\NaaBook\obj\Debug\NaaBook.Migr
 C:\Users\Sabina123\Source\Repos\aqashovas\NaaBook\NaaBook\obj\Debug\NaaBook.Migrations.Fullnamestudent.resources
 C:\Users\Sabina123\Source\Repos\aqashovas\NaaBook\NaaBook\obj\Debug\NaaBook.Migrations.Admin.resources
 C:\Users\Sabina123\Source\Repos\aqashovas\NaaBook\NaaBook\obj\Debug\NaaBook.Migrations.Adminuser.resources
+C:\Users\Sabina123\Source\Repos\aqashovas\NaaBook\NaaBook\obj\Debug\NaaBook.Migrations.settingphone.resources

@@ -15,6 +15,8 @@ namespace NaaBook.Models
 
         public string Address { get; set; }
 
+        public string Phone { get; set; }
+
         public string Facebook { get; set; }
 
         public string Twitter { get; set; }

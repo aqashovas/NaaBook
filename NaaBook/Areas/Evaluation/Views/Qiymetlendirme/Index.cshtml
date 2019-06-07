@@ -67,7 +67,7 @@
             </div>
         </div>
     </section>
-    <section id="labvsfreework">
+    @*<section id="labvsfreework">
         <div class="container">
             <div class="row">
                 <div class="table-responsive">
@@ -84,15 +84,14 @@
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach (var item in Model.Freework)
-                            {
-                                <tr>
-                                    <th scope="row" class="text-orange">@item.Subject.Name</th>
 
-                                    <td>@item.Student.Fullname</td>
-                                    <td>@item.Count</td>
-                                </tr>
-                            }
+                            <tr>
+                                <th scope="row" class="text-orange">@Model.Freework.Subject.Name</th>
+
+                                <td>@Model.Freework.Student.Fullname</td>
+                                <td>@Model.Freework.Count</td>
+                            </tr>
+
 
 
 
@@ -102,7 +101,7 @@
                     </table>
                 </div>
                 <div class="table-responsive">
-                    <h2 class="text-orange">Sərbəst işlər</h2>
+                    <h2 class="text-orange">Laboratoriya işləri</h2>
                     <table class="table" border="1" bordercolor="#9152f8">
                         <thead>
                             <tr>
@@ -115,15 +114,51 @@
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach (var item in Model.Laboratory)
-                            {
-                                <tr>
-                                    <th scope="row" class="text-orange">@item.Subject.Name</th>
 
-                                    <td>@item.Student.Fullname</td>
-                                    <td>@item.Count</td>
-                                </tr>
-                            }
+                            <tr>
+                                <th scope="row" class="text-orange">@Model.Laboratory.Subject.Name</th>
+
+                                <td>@Model.Laboratory.Student.Fullname</td>
+                                <td>@Model.Laboratory.Count</td>
+                            </tr>
+
+
+
+
+
+
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-responsive">
+                    <h2 class="text-orange">Kollokviumlar</h2>
+                    <table class="table" border="1" bordercolor="#9152f8">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="text-orange">Fənlər</th>
+                                <th scope="col" class="text-orange">Tələbələr</th>
+                                <th scope="col" class="text-orange">Kol 1</th>
+                                <th scope="col" class="text-orange">Kol 2</th>
+                                <th scope="col" class="text-orange">Kol 3</th>
+
+
+
+
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr>
+                                <th scope="row" class="text-orange">@Model.Colloquium.Subject.Name</th>
+
+                                <td>@Model.Colloquium.Student.Fullname</td>
+                                <td>@Model.Colloquium.Colloquium1</td>
+                                <td>@Model.Colloquium.Colloquium2</td>
+                                <td>@Model.Colloquium.Colloquium3</td>
+
+
+                            </tr>
+
 
 
 
@@ -134,7 +169,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section>*@
 
 </body>
 </html>

@@ -8,7 +8,7 @@ using System.Web.Mvc;
 namespace NaaBook.Controllers
 {
     [Auth]
-    public class HomeController : Controller
+    public class HomeController : BaseController
     {
         private readonly AcademyContext db = new AcademyContext();
         public ActionResult Index()

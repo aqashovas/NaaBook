@@ -8,7 +8,7 @@ using System.Web.Mvc;
 namespace NaaBook.Controllers
 {
     [Auth]
-    public class MuellimlerController : Controller
+    public class MuellimlerController : BaseController
     {
         private readonly AcademyContext db = new AcademyContext();
         // GET: Muellimler

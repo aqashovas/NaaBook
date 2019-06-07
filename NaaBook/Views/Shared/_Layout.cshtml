@@ -1,4 +1,9 @@
-﻿<!doctype html>
+﻿@{
+    
+
+    Setting setting = ViewBag.Setting as Setting;
+}
+<!doctype html>
 <html class="no-js" lang="az">
 <head>
     <meta charset="utf-8">
@@ -64,16 +69,16 @@
 
         <nav class="navbar navbar-default navbar-fixed white no-background bootsnav text-uppercase">
             @*<!-- Start Top Search -->
-            <div class="top-search">
-                <div class="container">
-                    <div class="input-group">
-                        <span class="input-group-addon"><i class="fa fa-search"></i></span>
-                        <input type="text" class="form-control" placeholder="Search">
-                        <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
+                <div class="top-search">
+                    <div class="container">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                            <input type="text" class="form-control" placeholder="Search">
+                            <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- End Top Search -->*@
+                <!-- End Top Search -->*@
 
             <div class="container">
 
@@ -84,10 +89,10 @@
                     </button>
                     @*<a class="navbar-brand" href="index.html">
 
-                        <img src="~/Public/assets/images/logolay.png" class="logo logo-display" alt="">
-                        <img src="~/Public/assets/images/logolay.png" class="logo logo-scrolled" alt="">
+                            <img src="~/Public/assets/images/logolay.png" class="logo logo-display" alt="">
+                            <img src="~/Public/assets/images/logolay.png" class="logo logo-scrolled" alt="">
 
-                    </a>*@
+                        </a>*@
                 </div>
                 <!-- End Header Navigation -->
                 <!-- Collect the nav links, forms, and other content for toggling -->
@@ -106,7 +111,7 @@
 
         <!--Home Sections-->
 
-        <section id="hello" class="home bg-mega" style="background-image:url('./Public/assets/images/background/layimg.jpg'); background-repeat: no-repeat;background-size:cover;">
+        <section id="hello" class="home bg-mega" style="background-image:url('./Public/assets/images/background/@setting.Headerimg'); background-repeat: no-repeat;background-size:cover;">
             <div class="overlay"></div>
             <div class="container">
                 <div class="row">
@@ -133,8 +138,8 @@
                 <div class="row">
                     <div class="main_company roomy-100 text-center">
                         <h3 class="text-uppercase text-orange">MAA</h3>
-                        <p class="text-orange">Adres</p>
-                        <p class="text-orange">(+84). 123. 456. 789  -  info@poiseidon.lnk</p>
+                        <p class="text-orange">@setting.Address</p>
+                        <p class="text-orange">+<a href="https://wa.me/@setting.Phone" class="text-orange">@setting.Phone</a> - <span class="text-orange">@setting.Mail</span> </p>
                     </div>
                 </div>
             </div>

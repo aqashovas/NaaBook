@@ -17,6 +17,8 @@ namespace NaaBook.Controllers
         {
             int idst = Convert.ToInt32(Session["UserId"]);
             int groupId = db.Students.FirstOrDefault(g => g.Id == idst).GroupId;
+            VwJournal model = new VwJournal();
+
             List<int> teacherid = new List<int>();
             List<Timetable> timetable = db.Timetables.Where(s => s.SubjectId == id && s.GroupId==groupId).ToList();
 
@@ -25,22 +27,43 @@ namespace NaaBook.Controllers
                 teacherid.Add(item.TeacherId);
             }
             var teacherslist = db.Teachers.Where(t => teacherid.Contains(t.Id)).ToList();
-            int ? labcount = db.Laboratories.Where(l => l.SubjectId == id && l.StudentId==idst).Count();
+            
+            if (db.Laboratories.Any(l => l.SubjectId == id && l.StudentId == idst))
+            {
+                int labcount = db.Laboratories.Last(l => l.SubjectId == id && l.StudentId == idst).Count;
+                model.Laboratory = labcount.ToString();
+
+            }
+            else
+            {
+                model.Laboratory = "0";
+            }
             int lestime = db.Lessonsections.FirstOrDefault(l => l.SubjectId == id && l.GroupId == groupId).LessonTime;
             List<Lessonmaterial> lessonmaterials = db.Lessonmaterials.Where(l => l.GroupId == groupId && l.SubjectId == id).ToList();
-            Colloquium colloquium = db.Colloquiums.FirstOrDefault(c => c.SubjectId == id && c.StudentId == idst);
             List<Evaluationtable> evaluationtables = db.Evaluationtables.Where(e => e.StudentId == idst && e.SubjectId == id).ToList();
             Exam exam = db.Exams.FirstOrDefault(e => e.StudentId == idst && e.SubjectId == id);
-            int ? freeworkcount = db.Freeworks.Where(f => f.SubjectId == id && f.StudentId == idst).Count();
-            VwJournal model = new VwJournal();
+            if( db.Freeworks.Any(f => f.SubjectId == id && f.StudentId == idst))
+            {
+                int freeworkcount = db.Freeworks.Last(f => f.SubjectId == id && f.StudentId == idst).Count;
+                model.Freework = freeworkcount.ToString();
+
+            }
+            else
+            {
+                model.Freework = "0";
+            }
             model.Teachers = teacherslist;
-            model.Laboratory = labcount;
             model.Lessonsection = lestime;
             model.Lessonmaterials = lessonmaterials;
-            model.Colloquium = colloquium;
+
+            Colloquium colloquium = db.Colloquiums.OrderByDescending(o=>o.Id).FirstOrDefault(c => c.SubjectId == id && c.StudentId == idst);
+
+                model.Colloquium = colloquium;
+
+            
+            
             model.Evaluationtables = evaluationtables;
             model.Exam = exam;
-            model.Freework = freeworkcount;
             return View(model);
         }
     }

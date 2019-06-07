@@ -11,10 +11,11 @@
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     @foreach (var item in Model)
     {
-        <p class="display-5 text-orange">@item.Name</p>
+        <h2 class="text-orange">@item.Name</h2>
         <a href="@Url.Action("lab","qiymetlendirme",new {id=item.Id })" class="display-6 text-orange">Lab</a>
         <a href="@Url.Action("serbestis","qiymetlendirme",new {id=item.Id })" class="display-6 text-orange">Sərbəst işlər</a>
         <a href="@Url.Action("gundelik","qiymetlendirme",new {id=item.Id })" class="display-6 text-orange">Qiymətləndirmə və davamiyyət</a>
+        <a href="@Url.Action("kollokvium","qiymetlendirme",new {id=item.Id })" class="display-6 text-orange">Kollokvium</a>
         <a href="@Url.Action("index","qiymetlendirme",new {id=item.Id })" class="display-6 text-orange">Baxış</a>
 
 

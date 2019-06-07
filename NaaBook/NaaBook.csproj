@@ -128,7 +128,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Evaluation\Controllers\AnasehifeController.cs" />
-    <Compile Include="Areas\Evaluation\Controllers\LaboratoriesController.cs" />
+    <Compile Include="Areas\Evaluation\Controllers\BaseTController.cs" />
     <Compile Include="Areas\Evaluation\Controllers\LoginEvController.cs" />
     <Compile Include="Areas\Evaluation\Controllers\CedvelimController.cs" />
     <Compile Include="Areas\Evaluation\Controllers\QiymetlendirmeController.cs" />
@@ -234,6 +234,10 @@
     <Compile Include="Migrations\201906071522471_Adminuser.cs" />
     <Compile Include="Migrations\201906071522471_Adminuser.Designer.cs">
       <DependentUpon>201906071522471_Adminuser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906071909394_settingphone.cs" />
+    <Compile Include="Migrations\201906071909394_settingphone.Designer.cs">
+      <DependentUpon>201906071909394_settingphone.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AcademyContext.cs" />
@@ -2390,6 +2394,12 @@
     <Content Include="Areas\Evaluation\Views\Sillabus\Details.cshtml" />
     <Content Include="Areas\Evaluation\Views\Sillabus\Edit.cshtml" />
     <Content Include="Areas\Evaluation\Views\Sillabus\Index.cshtml" />
+    <Content Include="Areas\Evaluation\Views\Colloquiums\Create.cshtml" />
+    <Content Include="Areas\Evaluation\Views\Colloquiums\Delete.cshtml" />
+    <Content Include="Areas\Evaluation\Views\Colloquiums\Details.cshtml" />
+    <Content Include="Areas\Evaluation\Views\Colloquiums\Edit.cshtml" />
+    <Content Include="Areas\Evaluation\Views\Colloquiums\Index.cshtml" />
+    <Content Include="Areas\Evaluation\Views\Qiymetlendirme\Kollokvium.cshtml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -2438,6 +2448,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Evaluation\Models\" />
+    <Folder Include="Areas\Evaluation\Views\BaseT\" />
     <Folder Include="Areas\Evaluation\Views\Evtest\" />
     <Folder Include="Areas\Evaluation\Views\Mytimetable\" />
     <Folder Include="Areas\Manage\Models\" />
@@ -2509,6 +2520,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201906071522471_Adminuser.resx">
       <DependentUpon>201906071522471_Adminuser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906071909394_settingphone.resx">
+      <DependentUpon>201906071909394_settingphone.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

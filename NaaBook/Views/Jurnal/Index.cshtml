@@ -99,14 +99,53 @@
                         </tbody>
                     </table>
                 </div>
+                @if (Model.Colloquium!=null)
+                {
+                <div class="table-responsive">
+                    <h2 class="text-orange">Kollokviumlar</h2>
+                    <table class="table" border="1" bordercolor="#9152f8">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="text-orange">Kollokvium nömrəsi</th>
+                                <th scope="col" class="text-orange">Qiymət</th>
+
+
+
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr>
+                                <th scope="row" class="text-orange">Kollokvium 1</th>
+                                <td>@Model.Colloquium.Colloquium1</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="text-orange">Kollokvium 2</th>
+                                <td>@Model.Colloquium.Colloquium2</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="text-orange">Kollokvium 3</th>
+                                <td>@Model.Colloquium.Colloquium3</td>
+                            </tr>
+
+
+
+
+
+
+                        </tbody>
+                    </table>
+                </div>
+                }
+                
             </div>
         </div>
     </section>
-    <section id="themessec">
+    <section id="themessec" style="margin-left:110px" class="formstyle">
         <div class="container">
             <div class="row">
                 <div class="table-responsive">
-                    <h2 class="text-orange">DƏrs mövzular</h2>
+                    <h2 class="text-orange">Dərs mövzular</h2>
                     <table class="table" border="1" bordercolor="#9152f8">
                         <thead>
                             <tr>

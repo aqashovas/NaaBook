@@ -9,7 +9,7 @@ using System.Web.Mvc;
 namespace NaaBook.Areas.Evaluation.Controllers
 {
     [EvAdmin]
-    public class CedvelimController : Controller
+    public class CedvelimController : BaseTController
     {
         private readonly AcademyContext db = new AcademyContext();
         // GET: Evaluation/Mytimetable

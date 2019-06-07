@@ -1,0 +1,66 @@
+﻿@model NaaBook.Models.Colloquium
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <div>
+        <h4>Colloquium</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Student.Fullname)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Student.Fullname)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Subject.Name)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Subject.Name)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Colloquium1)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Colloquium1)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Colloquium2)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Colloquium2)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Colloquium3)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Colloquium3)
+            </dd>
+    
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</body>
+</html>

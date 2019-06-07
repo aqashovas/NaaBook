@@ -9,7 +9,7 @@ using NaaBook.Viewmodels;
 namespace NaaBook.Controllers
 {
     [Auth]
-    public class CedvelController : Controller
+    public class CedvelController : BaseController
     {
         private readonly AcademyContext db = new AcademyContext();
 

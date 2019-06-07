@@ -9,8 +9,13 @@ namespace NaaBook.Viewmodels
     {
         public List< Evaluationtable >Evaluationtable { get; set; }
 
-        public List< Freework> Freework { get; set; }
+        //public Freework Freework { get; set; }
 
-        public List< Laboratory> Laboratory { get; set; }
+        //public Laboratory Laboratory { get; set; }
+
+        public Colloquium Colloquium { get; set; }
+
+
+
     }
 }
