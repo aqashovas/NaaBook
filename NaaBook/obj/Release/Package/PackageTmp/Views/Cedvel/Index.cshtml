@@ -1,0 +1,122 @@
+﻿@model VwTimetable
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section id="timetableup">
+    <div class="container">
+        <div class="row">
+            <div class="table-responsive">
+                <h2 class="text-orange">Üst həftə</h2>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th class="text-orange" scope="col">Günlər</th>
+                            <th class="text-orange" scope="col">1-ci saat (9:00-10.35)</th>
+                            <th class="text-orange" scope="col">2-ci saat (10:45-12.30)</th>
+                            <th class="text-orange" scope="col">3-ci saat (12:50-14.25)</th>
+                            <th class="text-orange" scope="col">4-ci saat (14:35-16.10)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th class="text-orange"scope="row">1</th>
+                            @foreach (var item in Model.Timetables1Up)
+                            {
+                                <td>@item.Subject.Name <br /> @item.Teacher.Name @item.Teacher.Surname @item.Teacher.Fathername <br />@item.Classroom </td>
+                            }
+                        </tr>
+                        <tr>
+                            <th class="text-orange"scope="row">2</th>
+                            @foreach (var item in Model.Timetables2Up)
+                            {
+                                <td>@item.Subject.Name <br /> @item.Teacher.Name @item.Teacher.Surname @item.Teacher.Fathername <br />@item.Classroom</td>
+                            }
+                        </tr>
+                        <tr>
+                            <th class="text-orange"scope="row">3</th>
+                            @foreach (var item in Model.Timetables3Up)
+                            {
+                                <td>@item.Subject.Name <br /> @item.Teacher.Name @item.Teacher.Surname @item.Teacher.Fathername <br />@item.Classroom</td>
+                            }
+                        </tr>
+                        <tr>
+                            <th class="text-orange"scope="row">4</th>
+                            @foreach (var item in Model.Timetables4Up)
+                            {
+                                <td>@item.Subject.Name <br /> @item.Teacher.Name @item.Teacher.Surname @item.Teacher.Fathername <br />@item.Classroom </td>
+                            }
+                        </tr>
+                        <tr>
+                            <th class="text-orange"scope="row">5</th>
+                            @foreach (var item in Model.Timetables5Up)
+                            {
+                                <td>@item.Subject.Name <br /> @item.Teacher.Name @item.Teacher.Surname @item.Teacher.Fathername <br />@item.Classroom </td>
+                            }
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="timetableDown">
+    <div class="container">
+        <div class="row">
+            <div class="table-responsive">
+                <h2 class="text-orange">Alt həftə</h2>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th class="text-orange"scope="col">Günlər</th>
+                            <th class="text-orange"scope="col">1-ci saat (9:00-10.35)</th>
+                            <th class="text-orange"scope="col">2-ci saat (10:45-12.30)</th>
+                            <th class="text-orange"scope="col">3-ci saat (12:50-14.25)</th>
+                            <th class="text-orange"scope="col">4-ci saat (14:35-16.10)</th>
+                            <th class="text-orange"scope="col">5</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th class="text-orange"scope="row">1</th>
+                            @foreach (var item in Model.Timetables1Down)
+                            {
+                                <td>@item.Subject.Name <br /> @item.Teacher.Name @item.Teacher.Surname @item.Teacher.Fathername <br />@item.Classroom </td>
+                            }
+                        </tr>
+                        <tr>
+                            <th class="text-orange"scope="row">2</th>
+                            @foreach (var item in Model.Timetables2Down)
+                            {
+                                <td>@item.Subject.Name <br /> @item.Teacher.Name @item.Teacher.Surname @item.Teacher.Fathername <br />@item.Classroom </td>
+                            }
+                        </tr>
+                        <tr>
+                            <th class="text-orange"scope="row">3</th>
+                            @foreach (var item in Model.Timetables3Down)
+                            {
+                                <td>@item.Subject.Name <br /> @item.Teacher.Name @item.Teacher.Surname @item.Teacher.Fathername <br />@item.Classroom </td>
+                            }
+                        </tr>
+                        <tr>
+                            <th class="text-orange"scope="row">4</th>
+                            @foreach (var item in Model.Timetables4Down)
+                            {
+                                <td>@item.Subject.Name <br /> @item.Teacher.Name @item.Teacher.Surname @item.Teacher.Fathername <br />@item.Classroom </td>
+                            }
+                        </tr>
+                        <tr>
+                            <th class="text-orange"scope="row">5</th>
+                            @foreach (var item in Model.Timetables5Down)
+                            {
+                                <td>@item.Subject.Name <br /> @item.Teacher.Name @item.Teacher.Surname @item.Teacher.Fathername <br />@item.Classroom </td>
+                            }
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+            </div>
+
+        </div>
+</section>

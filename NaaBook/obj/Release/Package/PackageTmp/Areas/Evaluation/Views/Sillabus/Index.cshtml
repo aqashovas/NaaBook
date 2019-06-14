@@ -1,0 +1,93 @@
+﻿@model IEnumerable<NaaBook.Models.Lessonmaterial>
+
+@{
+    Layout = null;
+}
+
+
+
+<!DOCTYPE html>
+
+<html lang="az">
+<head>
+    <meta name="viewport" content="width=device-width" />
+
+    <title>Index</title>
+    <!--Theme custom css -->
+    <link rel="stylesheet" href="~/Areas/Evaluation/Public/assets/css/style.css">
+    <link rel="stylesheet" href="~/Public/assets/css/style.css">
+
+    <!--<link rel="stylesheet" href="~/Areas/Evaluation/Public/assets/css/colors/maron.css">-->
+    <!--Theme Responsive css-->
+    <link rel="stylesheet" href="~/Areas/Evaluation/Public/assets/css/responsive.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="sidebar2">
+
+
+        <a href="@Url.Action("index","cedvelim")"> <i class="far fa-newspaper"></i> </a>
+        <a href="@Url.Action("index","qiymetlendirme")"><i class="fas fa-child"></i> </a>
+        <a href="@Url.Action("index","anasehife")"> <i class="fas fa-home"></i></a>
+    </div>
+    <a href="@Url.Action("create","sillabus")" class="text-orange">Əlavə et</a>
+        <p>
+            @Html.ActionLink("Create new", "Create")
+        </p>
+        <section id="evsec">
+            <table class="table">
+                <tr>
+                    <th>
+                        Qrupun adı
+                    </th>
+                    <th>
+                        Fənnin adı
+                    </th>
+                    <th>
+                        Tarix
+                    </th>
+                    <th>
+                        Mövzu
+                    </th>
+                    <th></th>
+                </tr>
+
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Group.Name)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Subject.Name)
+                        </td>
+
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Day)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Theme)
+                        </td>
+                        <td>
+                            <a href="@Url.Action("edit","sillabus",new { id=item.Id})" class="text-orange">
+                                <h2 class="text-orange">Yenilə</h2>
+
+                            </a>
+                            <a href="@Url.Action("details","sillabus",new { id=item.Id})" class="text-orange">
+                                <h2 class="text-orange">DEtallar</h2>
+
+                            </a>
+                            <a href="@Url.Action("delete","sillabus",new { id=item.Id})" class="text-orange">
+                                <h2 class="text-orange">Sil</h2>
+
+                            </a>
+                        </td>
+                    </tr>
+                }
+
+            </table>
+        </section>
+        
+    </body>
+</html>

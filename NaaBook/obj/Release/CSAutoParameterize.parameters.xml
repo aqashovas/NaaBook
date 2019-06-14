@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="AcademyContext-Web.config Connection String" description="AcademyContext Connection String used in web.config by the application to access the database." defaultValue="Data Source=SABINA\SQLEXPRESS;Initial Catalog=Academy;Integrated Security=SSPI;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Sabina123\\Source\\Repos\\aqashovas\\NaaBook\\NaaBook\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='AcademyContext']/@connectionString" />
+  </parameter>
+</parameters>

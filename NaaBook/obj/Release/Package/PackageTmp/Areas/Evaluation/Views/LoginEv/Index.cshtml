@@ -1,0 +1,100 @@
+﻿@model NaaBook.Models.Teacher
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login NaaBook</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="~/Areas/Evaluation/Public/loginstyle/images/icons/favicon.ico" />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/Areas/Evaluation/Public/loginstyle/vendor/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/Areas/Evaluation/Public/loginstyle/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/Areas/Evaluation/Public/loginstyle/fonts/iconic/css/material-design-iconic-font.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/Areas/Evaluation/Public/loginstyle/vendor/animate/animate.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/Areas/Evaluation/Public/loginstyle/vendor/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/Areas/Evaluation/Public/loginstyle/vendor/animsition/css/animsition.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/Areas/Evaluation/Public/loginstyle/vendor/select2/select2.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/Areas/Evaluation/Public/loginstyle/vendor/daterangepicker/daterangepicker.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/Areas/Evaluation/Public/loginstyle/css/util.css">
+    <link rel="stylesheet" type="text/css" href="~/Areas/Evaluation/Public/loginstyle/css/main.css">
+    <!--===============================================================================================-->
+</head>
+<body>
+
+    <div class="limiter">
+        <div class="container-login100" style="background-image: url('~/Areas/Evaluation/Public/loginstyle/images/loginbg.jpg');">
+            <div class="wrap-login100">
+                <form method="post" class="login100-form validate-form" action="@Url.Action("index","loginev")">
+
+                    <span class="login100-form-title p-b-34 p-t-27">
+                        NaaBook
+                    </span>
+                    <div class="form-group">
+                        @Html.TextBoxFor(Model=>Model.Username, new { @class = "form-control", @placeholder = "Username" })
+                    </div>
+                    <div class="form-group">
+                        @Html.TextBoxFor(Model => Model.Password, new { @class = "form-control", @placeholder = "Password", @type = "password" })
+                    </div>
+                    @Html.ValidationSummary(false, "", new { @class = "text-danger" })
+                    <div class="container-login100-form-btn">
+                        <input type="submit" class="login100-form-btn" value="LOGIN">
+                    </div>
+                    @*<div class="wrap-input100 validate-input" data-validate="Enter username">
+                            @Html.TextBoxFor(Model => Model.Username, new { @class = "form-control", @placeholder = "Username" })
+                            <span class="focus-input100" data-placeholder="&#xf207;"></span>
+                        </div>
+
+                        <div class="wrap-input100 validate-input" data-validate="Enter password">
+                            @Html.TextBoxFor(Model => Model.Password, new { @class = "form-control", @placeholder = "Password" })
+                            <span class="focus-input100" data-placeholder="&#xf191;"></span>
+                        </div>*@
+
+
+
+                    @*<div class="container-login100-form-btn">
+                            <button class="login100-form-btn">
+                                Login
+                            </button>
+                        </div>*@
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="dropDownSelect1"></div>
+
+    <!--===============================================================================================-->
+    <script src="~/Areas/Evaluation/Public/loginstyle/vendor/jquery/jquery-3.2.1.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="~/Areas/Evaluation/Public/loginstyle/vendor/animsition/js/animsition.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="~/Areas/Evaluation/Public/loginstyle/vendor/bootstrap/js/popper.js"></script>
+    <script src="~/Areas/Evaluation/Public/loginstyle/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="~/Areas/Evaluation/Public/loginstyle/vendor/select2/select2.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="~/Areas/Evaluation/Public/loginstyle/vendor/daterangepicker/moment.min.js"></script>
+    <script src="~/Areas/Evaluation/Public/loginstyle/vendor/daterangepicker/daterangepicker.js"></script>
+    <!--===============================================================================================-->
+    <script src="~/Areas/Evaluation/Public/loginstyle/vendor/countdowntime/countdowntime.js"></script>
+    <!--===============================================================================================-->
+    <script src="~/Areas/Evaluation/Public/loginstyle/js/main.js"></script>
+
+</body>
+</html>

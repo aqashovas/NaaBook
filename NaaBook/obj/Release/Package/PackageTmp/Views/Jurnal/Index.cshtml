@@ -1,0 +1,179 @@
+﻿@model VwJournal 
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html lang="az">
+<head>
+    <meta name="viewport" content="width=device-width" />
+
+    <title>Index</title>
+    <!--Theme custom css -->
+    <link rel="stylesheet" href="~/Public/assets/css/style.css">
+    <!--<link rel="stylesheet" href="~/Public/assets/css/colors/maron.css">-->
+    <!--Theme Responsive css-->
+    <link rel="stylesheet" href="~/Public/assets/css/responsive.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="sidebar2">
+
+        <a href="@Url.Action("index","cedvel")"> <i class="far fa-newspaper"></i> </a>
+        <a href="@Url.Action("index","muellimler")"><i class="fas fa-chalkboard-teacher"></i> </a>
+        <a href="@Url.Action("index","home")"> <i class="fas fa-home"></i></a>
+    </div>
+    <section id="labvsfreework">
+        <div class="container">
+
+
+            <div class="row mbr-justify-content-center">
+
+                <div class="col-lg-6 mbr-col-md-10">
+                    <div class="wrap wr2">
+                        <div class="ico-wrap">
+                            @Model.Freework
+                        </div>
+                        <div class="text-wrap vcenter">
+                            <h2 class="mbr-fonts-style mbr-bold mbr-section-title3 display-5">
+                                Sərbəst işlər
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mbr-col-md-10">
+                    <div class="wrap wr2">
+                        <div class="ico-wrap">
+                            @Model.Laboratory
+                        </div>
+                        <div class="text-wrap vcenter">
+                            <h2 class="mbr-fonts-style mbr-bold mbr-section-title3 display-5">
+                                Laboratoriya işləri
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+
+        </div>
+
+    </section>
+    <section id="evsec">
+        <div class="container">
+            <div class="row">
+                <div class="table-responsive">
+                    <h2 class="text-orange">Qiymətləndirmə və davamiyyət</h2>
+                    <table class="table" border="1" bordercolor="#9152f8">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="text-orange">Günlər</th>
+                                <th scope="col" class="text-orange">1-ci hissə</th>
+                                <th scope="col" class="text-orange">2-ci hissə</th>
+
+
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model.Evaluationtables)
+                            {
+                                <tr>
+                                    <th scope="row" class="text-orange">@item.Time</th>
+                                    <td>@item.MarkOrAttendanceFirst</td>
+                                    <td>@item.MarkOrAttendanceSecond</td>
+                                </tr>
+                            }
+
+
+
+
+
+                        </tbody>
+                    </table>
+                </div>
+                @if (Model.Colloquium!=null)
+                {
+                <div class="table-responsive">
+                    <h2 class="text-orange">Kollokviumlar</h2>
+                    <table class="table" border="1" bordercolor="#9152f8">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="text-orange">Kollokvium nömrəsi</th>
+                                <th scope="col" class="text-orange">Qiymət</th>
+
+
+
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr>
+                                <th scope="row" class="text-orange">Kollokvium 1</th>
+                                <td>@Model.Colloquium.Colloquium1</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="text-orange">Kollokvium 2</th>
+                                <td>@Model.Colloquium.Colloquium2</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="text-orange">Kollokvium 3</th>
+                                <td>@Model.Colloquium.Colloquium3</td>
+                            </tr>
+
+
+
+
+
+
+                        </tbody>
+                    </table>
+                </div>
+                }
+                
+            </div>
+        </div>
+    </section>
+    <section id="themessec" style="margin-left:110px" class="formstyle">
+        <div class="container">
+            <div class="row">
+                <div class="table-responsive">
+                    <h2 class="text-orange">Dərs mövzular</h2>
+                    <table class="table" border="1" bordercolor="#9152f8">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="text-orange">Günlər</th>
+                                <th scope="col" class="text-orange">Mövzular</th>
+
+
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model.Lessonmaterials)
+                            {
+                                <tr>
+                                    <th scope="row" class="text-orange">@item.Day</th>
+                                    <td>@item.Theme</td>
+                                </tr>
+                            }
+
+
+
+
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

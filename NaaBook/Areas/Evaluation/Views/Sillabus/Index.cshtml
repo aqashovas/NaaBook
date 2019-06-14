@@ -31,26 +31,26 @@
         <a href="@Url.Action("index","qiymetlendirme")"><i class="fas fa-child"></i> </a>
         <a href="@Url.Action("index","anasehife")"> <i class="fas fa-home"></i></a>
     </div>
-    <a href="@Url.Action("create","sillabus")" class="text-orange">Əlavə et</a>
+    <a href="@Url.Action("create","sillabus")" class="text-orange" style="margin-left:110px;font-size:30px">Əlavə et</a>
         <p>
             @Html.ActionLink("Create new", "Create")
         </p>
         <section id="evsec">
             <table class="table">
                 <tr>
-                    <th>
+                    <th class="text-orange"  >
                         Qrupun adı
                     </th>
-                    <th>
+                    <th class="text-orange"  >
                         Fənnin adı
                     </th>
-                    <th>
+                    <th class="text-orange"  >
                         Tarix
                     </th>
-                    <th>
+                    <th class="text-orange"  >
                         Mövzu
                     </th>
-                    <th></th>
+                    <th class="text-orange"  ></th>
                 </tr>
 
                 @foreach (var item in Model)
@@ -71,15 +71,15 @@
                         </td>
                         <td>
                             <a href="@Url.Action("edit","sillabus",new { id=item.Id})" class="text-orange">
-                                <h2 class="text-orange">Yenilə</h2>
+                                <h4 class="text-orange">Yenilə</h4>
 
                             </a>
                             <a href="@Url.Action("details","sillabus",new { id=item.Id})" class="text-orange">
-                                <h2 class="text-orange">DEtallar</h2>
+                                <h4 class="text-orange">DEtallar</h4>
 
                             </a>
                             <a href="@Url.Action("delete","sillabus",new { id=item.Id})" class="text-orange">
-                                <h2 class="text-orange">Sil</h2>
+                                <h4 class="text-orange">Sil</h4>
 
                             </a>
                         </td>

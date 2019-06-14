@@ -1,0 +1,36 @@
+﻿@model List<Teacher> 
+
+@{
+    ViewBag.Title = "Index";
+}
+<section id="teacherlist">
+    <div class="container">
+        <table class="table table-dark">
+            <thead>
+                <tr>
+
+                    <th class="text-orange"  class="text-orange"  scope="col">Ad Soyad Ata adı</th>
+                    <th class="text-orange"  scope="col">Əlaqə nömrəsi</th>
+                    <th class="text-orange"  scope="col">E-poçt adresi</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                @foreach (var item in Model)
+                {
+                    <tr>
+
+                        <td>@item.Name @item.Surname @item.Fathername</td>
+                        <td><a href="https://wa.me/@item.Phone">@item.Phone</a></td>
+                        <td><a href="mailto:@item.Mail">@item.Mail</a></td>
+                    </tr>
+                }
+
+
+
+
+            </tbody>
+        </table>
+    </div>
+    
+</section>
